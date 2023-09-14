@@ -30,6 +30,7 @@ for file in files:
     samples = list(filter(None, samples))    
 
     character_map = []
+    character_frequency = []
 
     label = file.split('.')[0]
 
@@ -44,18 +45,16 @@ for file in files:
                 character_frequency[len(character_map)-1] += 1
             else:
                 character_frequency[character_map.index(character)] += 1
-        
-        character_frequency = ','.join(str(e) for e in character_frequency)
+
+        total_characters = len(sample)
+        # relative frequency is in percentages
+        character_frequency = ','.join(str(round(f / total_characters * 100)) for f in character_frequency)
 
         datasetLines.append(label + ":" + character_frequency)
 
-    print('Finished extracting ' + file)
-
-
-
+    print('Finished extracting features from ' + str(len(samples)) + ' code samples to ' + file)
 
 # mix datasetLines randomly
-
 random.shuffle(datasetLines)
 
 f = open('./languageFeatures.txt', 'w')

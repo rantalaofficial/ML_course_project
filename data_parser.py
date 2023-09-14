@@ -20,7 +20,7 @@ for language in languages:
 
     # if filename begins with try, open it
     for file in files:
-        if file.startswith('try') or file.startswith('phptry'): # phptry is for php files
+        if 'try' in file:
 
             # open file
             try:
