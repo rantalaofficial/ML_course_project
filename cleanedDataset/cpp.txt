@@ -1,0 +1,2270 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  for (int i = 0; i < 10; i++) {
+    if (i == 4) {
+      break;
+    }
+    cout << i << "\n";
+  } 
+  return 0;
+}
+
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 6;
+  int sum = x + y;
+  cout << sum;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+void myFunction() {
+  cout << "I just got executed!\n";
+}
+
+int main() {
+  myFunction();
+  myFunction();
+  myFunction();
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << (x <= y); // returns 0 (false) because 5 is neither less than or equal to 3
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int myNum = 15;
+  cout << myNum;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string myString = "Hello";
+  cout << myString[1];
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Base class
+class Vehicle {
+  public: 
+    string brand = "Ford";
+    void honk() {
+      cout << "Tuut, tuut! \n" ;
+    }
+};
+
+// Derived class
+class Car: public Vehicle {
+  public: 
+    string model = "Mustang";
+};
+
+int main() {
+  Car myCar;
+  myCar.honk();
+  cout << myCar.brand + " " + myCar.model;
+  return 0;
+}
+
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  // Good name
+  int minutesPerHour = 60;
+  
+  // OK, but not so easy to understand what m actually is
+  int m = 60;
+  
+  cout << minutesPerHour << "\n";
+  cout << m;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  myFunction();
+  return 0;
+}
+
+void myFunction() {
+  cout << "I just got executed!";
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int myNum;
+  myNum = 15;
+  cout << myNum;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 12;
+  int y = 3;
+  cout << x / y;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  const int minutesPerHour = 60;
+  const float PI = 3.14;
+  cout << minutesPerHour << "\n";
+  cout << PI;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 10;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  for (int i = 0; i < 5; i++) {
+    cout << i << "\n";
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 10;
+  cout << (x == 10);
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 10;
+  ++x;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main () {
+  // Create a text file
+  ofstream MyWriteFile("filename.txt");
+
+  // Write to the file
+  MyWriteFile << "Files can be tricky, but it is fun enough!";
+ 
+  // Close the file
+  MyWriteFile.close();
+
+  // Create a text string, which is used to output the text file
+  string myText;
+
+  // Read from the text file
+  ifstream MyReadFile("filename.html");
+
+  // Use a while loop together with the getline() function to read the file line by line
+  while (getline (MyReadFile, myText)) {
+    // Output the text from the file
+    cout << myText;
+  }
+
+  // Close the file
+  MyReadFile.close();
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+ 
+int main () {
+  float myNum = 5.75;
+  cout << myNum;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+class Car {        // The class
+  public:          // Access specifier
+    string brand;  // Attribute
+    string model;  // Attribute
+    int year;      // Attribute
+    Car(string x, string y, int z) {  // Constructor with parameters
+      brand = x;
+      model = y;
+      year = z;
+    }
+};
+
+int main() {
+  // Create Car objects and call the constructor with different values
+  Car carObj1("BMW", "X5", 1999);
+  Car carObj2("Ford", "Mustang", 1969);
+
+  // Print values
+  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
+  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World! \n\n";
+  cout << "I am learning C++";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  if (20 > 18) {
+    cout << "20 is greater than 18";
+  }  
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  for (int i = 0; i < 10; i++) {
+    if (i == 4) {
+      continue;
+    }
+    cout << i << "\n";
+  }   
+  return 0;
+}
+
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << min(5, 10);
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+  for (int i = 0; i < 4; i++) {
+    cout << i << ": " << cars[i] << "\n";
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int sum(int k) {
+  if (k > 0) {
+    return k + sum(k - 1);
+  } else {
+    return 0;
+  }
+}
+
+int main() {
+  int result = sum(10);
+  cout << result;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  x |= 3;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+void myFunction(string fname) {
+  cout << fname << " Refsnes\n";
+}
+
+int main() {
+  myFunction("Liam");
+  myFunction("Jenny");
+  myFunction("Anja");
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << x + y;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  x <<= 3;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World! \n";
+  cout << "I am learning C++";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+ 
+int main () {
+  // Creating variables
+  int myNum = 5;               // Integer (whole number)
+  float myFloatNum = 5.99;     // Floating point number
+  double myDoubleNum = 9.98;   // Floating point number
+  char myLetter = 'D';         // Character
+  bool myBoolean = true;       // Boolean
+  string myString = "Hello";   // String
+   
+  // Print variable values
+  cout << "int: " << myNum << "\n";
+  cout << "float: " << myFloatNum << "\n";
+  cout << "double: " << myDoubleNum << "\n";
+  cout << "char: " << myLetter << "\n";
+  cout << "bool: " << myBoolean << "\n";
+  cout << "string: " << myString << "\n";
+ 
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+class Car {        // The class
+  public:          // Access specifier
+    string brand;  // Attribute
+    string model;  // Attribute
+    int year;      // Attribute
+    Car(string x, string y, int z); // Constructor declaration
+};
+
+// Constructor definition outside the class
+Car::Car(string x, string y, int z) {
+  brand = x;
+  model = y;
+  year = z;
+}
+
+int main() {
+  // Create Car objects and call the constructor with different values
+  Car carObj1("BMW", "X5", 1999);
+  Car carObj2("Ford", "Mustang", 1969);
+
+  // Print values
+  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
+  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+class MyClass {
+  public:    // Public access specifier
+    int x;   // Public attribute
+  private:   // Private access specifier
+    int y;   // Private attribute
+};
+
+int main() {
+  MyClass myObj;
+  myObj.x = 25;  // Allowed (x is public)
+  myObj.y = 50;  // Not allowed (y is private)
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 10;
+  x += 5;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << max(5, 10);
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  bool isCodingFun = true;
+  bool isFishTasty = false;
+  cout << isCodingFun << "\n";
+  cout << isFishTasty;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+class MyClass {       // The class
+  public:             // Access specifier
+    int myNum;        // Attribute (int variable)
+    string myString;  // Attribute (string variable)
+};
+
+int main() {
+  MyClass myObj;  // Create an object of MyClass
+
+  // Access attributes and set values
+  myObj.myNum = 15;
+  myObj.myString = "Some text";
+
+  // Print values
+  cout << myObj.myNum << "\n"; 
+  cout << myObj.myString; 
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  int time = 20;
+  string result = (time < 18) ? "Good day." : "Good evening.";
+  cout << result;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << x - y;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string cars[5] = {"Volvo", "BMW", "Ford"};
+  cars[3] = "Mazda";
+  cars[4] = "Tesla";
+  for(int i = 0; i < 5; i++) {
+    cout << cars[i] << "\n";
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  x -= 3;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 10;
+  int y = 9;
+  cout << (x > y);
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int myAge = 35;
+  cout << "I am " << myAge << " years old.";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int day = 4;
+  switch (day) {
+  case 1:
+    cout << "Monday";
+    break;
+  case 2:
+    cout << "Tuesday";
+    break;
+  case 3:
+    cout << "Wednesday";
+    break;
+  case 4:
+    cout << "Thursday";
+    break;
+  case 5:
+    cout << "Friday";
+    break;
+  case 6:
+    cout << "Saturday";
+    break;
+  case 7:
+    cout << "Sunday";
+    break;
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  x += 3;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  cout << "The length of the txt string is: " << txt.length();
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << (x == y); // returns 0 (false) because 5 is not equal to 3
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  x >>= 3;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+class MyClass {         // The class
+  public:               // Access specifier
+    void myMethod() {   // Method/function
+      cout << "Hello World!";
+    }
+};
+
+int main() {
+  MyClass myObj;     // Create an object of MyClass
+  myObj.myMethod();  // Call the method
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!"; // This is a comment
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!\t";
+  cout << "I am learning C++";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  string letters[2][4] = {
+    { "A", "B", "C", "D" },
+    { "E", "F", "G", "H" }
+  };
+  
+  cout << letters[0][2];
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int myFunction(int x, int y) {
+  return x + y;
+}
+
+int main() {
+  cout << myFunction(5, 3);
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Base class
+class Animal {
+  public:
+    void animalSound() {
+      cout << "The animal makes a sound \n" ;
+    }
+};
+
+// Derived class
+class Pig : public Animal {
+  public:
+    void animalSound() {
+      cout << "The pig says: wee wee \n" ;
+    }
+};
+
+// Derived class
+class Dog : public Animal {
+  public:
+    void animalSound() {
+      cout << "The dog says: bow wow \n" ;
+    }
+};
+
+int main() {
+  Animal myAnimal;
+  Pig myPig;
+  Dog myDog;
+
+  myAnimal.animalSound();
+  myPig.animalSound();
+  myDog.animalSound();
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 100 + 50;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string myString = "Hello";
+  myString[0] = 'J';
+  cout << myString;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+ 
+int main () {
+  string firstName = "John ";
+  string lastName = "Doe";
+  string fullName = firstName + lastName;
+  cout << fullName;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+void swapNums(int &x, int &y) {
+  int z = x;
+  x = y;
+  y = z;
+}
+
+int main() {
+  int firstNum = 10;
+  int secondNum = 20;
+
+  cout << "Before swap: " << "\n";
+  cout << firstNum << secondNum << "\n";
+
+  swapNums(firstNum, secondNum);
+
+  cout << "After swap: " << "\n";
+  cout << firstNum << secondNum << "\n";
+
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+  cars[0] = "Opel";
+  cout << cars[0];
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << (x != y); // returns 1 (true) because 5 is not equal to 3
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  for (int i = 0; i <= 10; i = i + 2) {
+    cout << i << "\n";
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int i = 0;
+  while (i < 5) {
+    cout << i << "\n";
+    i++;
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+ 
+int main () {
+  char a = 65, b = 66, c = 67;
+  cout << a;
+  cout << b;
+  cout << c;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int plusFunc(int x, int y) {
+  return x + y;
+}
+
+double plusFunc(double x, double y) {
+  return x + y;
+}
+
+int main() {
+  int myNum1 = plusFunc(8, 5);
+  double myNum2 = plusFunc(4.3, 6.26);
+  cout << "Int: " << myNum1 << "\n";
+  cout << "Double: " << myNum2;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << x * y;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  try {
+    int age = 15;
+    if (age >= 18) {
+      cout << "Access granted - you are old enough.";
+    } else {
+      throw 505;
+    }
+  }
+  catch (...) {
+    cout << "Access denied - You must be at least 18 years old.\n";
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Declare a structure named "car"
+struct car {
+  string brand;
+  string model;
+  int year;
+};
+
+int main() {
+  // Create a car structure and store it in myCar1;
+  car myCar1;
+  myCar1.brand = "BMW";
+  myCar1.model = "X5";
+  myCar1.year = 1999;
+
+  // Create another car structure and store it in myCar2;
+  car myCar2;
+  myCar2.brand = "Ford";
+  myCar2.model = "Mustang";
+  myCar2.year = 1969;
+ 
+  // Print the structure members
+  cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n";
+  cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n";
+ 
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!\\";
+  cout << "I am learning C++";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+class MyClass {   // The class
+  public:         // Public access specifier
+    int x;        // Public attribute (int variable)
+};
+
+int main() {
+  MyClass myObj;  // Create an object of MyClass
+
+  // Access attributes and set values
+  myObj.x = 15;
+
+  // Print values
+  cout << myObj.x; 
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string food = "Pizza";
+
+  cout << food << "\n";
+  cout << &food << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int myNum = 15;   // Now myNum is 15
+  myNum = 10;       // Now myNum is 10
+  cout << myNum;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+ 
+int main () {
+  char myGrade = 'B';
+  cout << myGrade;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string cars[5];
+  cars[0] = "Volvo";
+  cars[1] = "BMW";
+  cars[2] = "Ford";
+  cars[3] = "Mazda";
+  cars[4] = "Tesla";
+  for(int i = 0; i < 5; i++) {
+    cout << cars[i] << "\n";
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int i = 0;
+  while (i < 10) {
+    if (i == 4) {
+      i++;
+      continue;
+    }
+    cout << i << "\n";
+    i++;
+  } 
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << (!(x > 3 && x < 10)); // returns false (0) because ! (not) is used to reverse the result
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "They call him \"Johnny\".";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << (x > y); // returns 1 (true) because 5 is greater than 3
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int i = 0;
+  do {
+    cout << i << "\n";
+    i++;
+  }
+  while (i < 5);
+  return 0;
+}
+
+
+END_OF_CODE
+#include <iostream>
+
+int main() {
+  std::cout << "Hello World!";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+class MyClass {         // The class
+  public:               // Access specifier
+    void myMethod();    // Method/function declaration
+};
+
+// Method/function definition outside the class
+void MyClass::myMethod() {
+  cout << "Hello World!";
+}
+
+int main() {
+  MyClass myObj;     // Create an object of MyClass
+  myObj.myMethod();  // Call the method
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int myNumbers[5] = {10, 20, 30, 40, 50};
+  cout << sizeof(myNumbers);
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+ 
+int main () {
+  int x = 10;
+  int y = 20;
+  int z = x + y;
+  cout << z;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  ++x;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string greeting = "Hello";
+  cout << greeting;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int myNumbers[5] = {10, 20, 30, 40, 50};
+  int getArrayLength = sizeof(myNumbers) / sizeof(int);
+  cout << getArrayLength;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  try {
+    int age = 15;
+    if (age >= 18) {
+      cout << "Access granted - you are old enough.";
+    } else {
+      throw (age);
+    }
+  }
+  catch (int myNum) {
+    cout << "Access denied - You must be at least 18 years old.\n";
+    cout << "Age is: " << myNum;  
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+// Base class
+class MyClass {
+  public:
+    void myFunction() {
+      cout << "Some content in parent class.\n" ;
+    }
+};
+
+// Another base class
+class MyOtherClass {
+  public:
+    void myOtherFunction() {
+      cout << "Some content in another class.\n" ;
+    }
+};
+
+// Derived class
+class MyChildClass: public MyClass, public MyOtherClass {
+};
+
+int main() {
+  MyChildClass myObj;
+  myObj.myFunction();
+  myObj.myOtherFunction();
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  // This is a comment
+  cout << "Hello World!";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+ 
+int main () {
+  double myNum = 19.99;
+  cout << myNum;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>  
+using namespace std;  
+
+void myFunction(int myNumbers[5]) {
+  for (int i = 0; i < 5; i++) {  
+    cout << myNumbers[i] << "\n";    
+  } 
+}
+
+int main() {  
+  int myNumbers[5] = {10, 20, 30, 40, 50};  
+  myFunction(myNumbers);
+  return 0;
+}  
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+ 
+int main () {
+  int myNum = 1000;
+  cout << myNum;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+
+int main() {
+  std::string greeting = "Hello";
+  std::cout << greeting;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+ 
+int main () {
+  float f1 = 35e3;
+  double d1 = 12E4;
+  cout << f1 << "\n";
+  cout << d1;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int myFunction(int x, int y) {
+  return x + y;
+}
+
+int main() {
+  int z = myFunction(5, 3);
+  cout << z;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int i = 0;
+  while (i < 10) {
+    cout << i << "\n";
+    i++;
+    if (i == 4) {
+      break;
+    }
+  } 
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  try {
+    int age = 15;
+    if (age >= 18) {
+      cout << "Access granted - you are old enough.";
+    } else {
+      throw 505;
+    }
+  }
+  catch (int myNum) {
+    cout << "Access denied - You must be at least 18 years old.\n";
+    cout << "Error number: " << myNum;  
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  string letters[2][4] = {
+    { "A", "B", "C", "D" },
+    { "E", "F", "G", "H" }
+  };
+  letters[0][0] = "Z";
+  
+  cout << letters[0][0];
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  try {
+    int age = 20;
+    if (age >= 18) {
+      cout << "Access granted - you are old enough.";
+    } else {
+      throw (age);
+    }
+  }
+  catch (int myNum) {
+    cout << "Access denied - You must be at least 18 years old.\n";
+    cout << "Age is: " << myNum;  
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+  for (int i = 0; i < 4; i++) {
+    cout << cars[i] << "\n";
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  struct {
+    int myNum;
+    string myString;
+  } myStructure;
+
+  myStructure.myNum = 1;
+  myStructure.myString = "Hello World!";
+
+  cout << myStructure.myNum << "\n";
+  cout << myStructure.myString << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  cout << "The length of the txt string is: " << txt.size();
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << (x < y); // returns 0 (false) because 5 is not less than 3
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  /* The code below will print the words Hello World!
+  to the screen, and it is amazing */  
+  cout << "Hello World!";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x, y, z;
+  x = y = z = 50;
+  cout << x + y + z;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+class Employee {
+  private:
+    int salary;
+
+  public:
+    void setSalary(int s) {
+      salary = s;
+    }
+    int getSalary() {
+      return salary;
+    }
+};
+
+int main() {
+  Employee myObj;
+  myObj.setSalary(50000);
+  cout << myObj.getSalary();
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string food = "Pizza";
+  string &meal = food;
+
+  cout << food << "\n";
+  cout << meal << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  x *= 3;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+class MyClass {     // The class
+  public:           // Access specifier
+    MyClass() {     // Constructor
+      cout << "Hello World!";
+    }
+};
+
+int main() {
+  MyClass myObj;    // Create an object of MyClass (this will call the constructor)
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+// Base class
+class Employee  {
+  protected:  // Protected access specifier
+    int salary;
+};
+
+// Derived class
+class Programmer: public Employee {
+  public:
+    int bonus;
+    void setSalary(int s) {
+      salary = s;
+    }
+    int getSalary() {
+      return salary;
+    }
+};
+
+int main() {
+  Programmer myObj;
+  myObj.setSalary(50000);
+  myObj.bonus = 15000;
+  cout << "Salary: " << myObj.getSalary() << "\n";
+  cout << "Bonus: " << myObj.bonus << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string food = "Pizza";  // A string variable
+  string* ptr = &food;  // A pointer variable that stores the address of food
+
+  // Output the value of food
+  cout << food << "\n";
+
+  // Output the memory address of food
+  cout << &food << "\n";
+
+  // Output the memory address of food with the pointer
+  cout << ptr << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int time = 20;
+  if (time < 18) {
+    cout << "Good day.";
+  } else {
+    cout << "Good evening.";
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string food = "Pizza";
+
+  cout << &food;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  x ^= 3;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  string letters[2][2][2] = {
+    {
+      { "A", "B" },
+      { "C", "D" }
+    },
+    {
+      { "E", "F" },
+      { "G", "H" }
+    }
+  };
+
+  for(int i = 0; i < 2; i++) {
+    for(int j = 0; j < 2; j++) {
+      for(int k = 0; k < 2; k++) {
+        cout << letters[i][j][k] << "\n";
+      }
+    }
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  --x;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string food = "Pizza";  // Variable declaration
+  string* ptr = &food;    // Pointer declaration
+
+  // Reference: Output the memory address of food with the pointer
+  cout << ptr << "\n";
+
+  // Dereference: Output the value of food with the pointer
+  cout << *ptr << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Car {
+  public:
+    string brand;
+    string model;
+    int year;
+};
+
+int main() {
+  Car carObj1;
+  carObj1.brand = "BMW";
+  carObj1.model = "X5";
+  carObj1.year = 1999;
+
+  Car carObj2;
+  carObj2.brand = "Ford";
+  carObj2.model = "Mustang";
+  carObj2.year = 1969;
+
+  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
+  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << (x >= y); // returns 1 (true) because five is greater than, or equal, to 3
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!";
+  cout << "I am learning C++";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  struct {
+    string brand;
+    string model;
+    int year;
+  } myCar1, myCar2; // We can add variables by separating them with a comma here
+
+  // Put data into the first structure
+  myCar1.brand = "BMW";
+  myCar1.model = "X5";
+  myCar1.year = 1999;
+
+  // Put data into the second structure
+  myCar2.brand = "Ford";
+  myCar2.model = "Mustang";
+  myCar2.year = 1969;
+
+  // Print the structure members
+  cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n";
+  cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string myString = "Hello";
+  cout << myString[0];
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+ 
+int main () {
+  string firstName = "John ";
+  string lastName = "Doe";
+  string fullName = firstName.append(lastName);
+  cout << fullName;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << (x > 3 || x < 4); // returns true (1) because one of the conditions are true (5 is greater than 3, but 5 is not less than 4)
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 2;
+  cout << x % y;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+  cout << sqrt(64) << "\n";
+  cout << round(2.6) << "\n";
+  cout << log(2) << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int time = 22;
+  if (time < 10) {
+    cout << "Good morning.";
+  } else if (time < 20) {
+    cout << "Good day.";
+  } else {
+    cout << "Good evening.";
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+void myFunction() {
+  cout << "I just got executed!";
+}
+
+int main() {
+  myFunction();
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << (10 == 15);
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int myFunction(int x) {
+  return 5 + x;
+}
+
+int main() {
+  cout << myFunction(3);
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+// Function declaration
+void myFunction();
+
+// The main method
+int main() {
+  myFunction();  // call the function
+  return 0;
+}
+
+// Function definition
+void myFunction() {
+  cout << "I just got executed!";
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!" << endl;
+  cout << "I am learning C++";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int plusFuncInt(int x, int y) {
+  return x + y;
+}
+
+double plusFuncDouble(double x, double y) {
+  return x + y;
+}
+
+int main() {
+  int myNum1 = plusFuncInt(8, 5);
+  double myNum2 = plusFuncDouble(4.3, 6.26);
+  cout << "Int: " << myNum1 << "\n";
+  cout << "Double: " << myNum2;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+class Car {
+  public:
+    int speed(int maxSpeed);
+};
+
+int Car::speed(int maxSpeed) {
+  return maxSpeed;
+}
+
+int main() {
+  Car myObj;
+  cout << myObj.speed(200);
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  x %= 3;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 20;
+  int y = 18;
+  if (x > y) {
+    cout << "x is greater than y";
+  }  
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  string letters[2][4] = {
+    { "A", "B", "C", "D" },
+    { "E", "F", "G", "H" }
+  };
+
+  for(int i = 0; i < 2; i++) {
+    for(int j = 0; j < 4; j++) {
+      cout <&lt letters[i][j] << "\n";
+    }
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 6;
+  int sum = x + y;
+  cout << sum;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+void myFunction(string country = "Norway") {
+  cout << country << "\n";
+}
+
+int main() {
+  myFunction("Sweden");
+  myFunction("India");
+  myFunction();
+  myFunction("USA");
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << (10 > 9);
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  x &= 3;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string food = "Pizza";
+  string* ptr = &food;
+
+  // Output the value of food
+  cout << food << "\n";
+
+  // Output the memory address of food
+  cout << &food << "\n";
+
+  // Access the memory address of food and output its value
+  cout << *ptr << "\n";
+  
+  // Change the value of the pointer
+  *ptr = "Hamburger";
+  
+  // Output the new value of the pointer
+  cout << *ptr << "\n";
+  
+  // Output the new value of the food variable
+  cout << food << "\n";
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  const int myNum = 15;
+  myNum = 10;
+  cout << myNum;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int day = 4;
+  switch (day) {
+    case 6:
+      cout << "Today is Saturday";
+      break;
+    case 7:
+      cout << "Today is Sunday";
+      break;
+    default:
+      cout << "Looking forward to the Weekend";
+  }
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  double x = 5;
+  x /= 3;
+  cout << x;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5, y = 6, z = 50;  
+  cout << x + y + z;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+// Parent class
+class MyClass {
+  public: 
+    void myFunction() {
+      cout << "Some content in parent class." ;
+    }
+};
+
+// Child class
+class MyChild: public MyClass {
+};
+
+// Grandchild class 
+class MyGrandChild: public MyChild {
+};
+
+int main() {
+  MyGrandChild myObj;
+  myObj.myFunction();
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 5;
+  int y = 3;
+  cout << (x > 3 && x < 10); // returns true (1) because 5 is greater than 3 AND 5 is less than 10
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+void myFunction(string fname, int age) {
+  cout << fname << " Refsnes. " << age << " years old. \n";
+}
+
+int main() {
+  myFunction("Liam", 3);
+  myFunction("Jenny", 14);
+  myFunction("Anja", 30);
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+ 
+int main () {
+  string firstName = "John";
+  string lastName = "Doe";
+  string fullName = firstName + " " + lastName;
+  cout << fullName;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+ 
+int main () {
+  string x = "10";
+  string y = "20";
+  string z = x + y;
+  cout << z;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+using namespace std;
+
+int main() {
+  int sum1 = 100 + 50;        // 150 (100 + 50)
+  int sum2 = sum1 + 250;      // 400 (150 + 250)
+  int sum3 = sum2 + sum2;     // 800 (400 + 400)
+  cout << sum1 << "\n";
+  cout << sum2 << "\n";
+  cout << sum3;
+  return 0;
+}
+
+END_OF_CODE
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+  cout << cars[0];
+  return 0;
+}
+
+END_OF_CODE

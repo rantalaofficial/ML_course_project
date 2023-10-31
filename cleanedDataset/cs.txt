@@ -1,0 +1,2574 @@
+using System;
+
+namespace MyApplication
+{
+  class Animal  // Base class (parent) 
+  {
+    public virtual void animalSound()
+    {
+      Console.WriteLine("The animal makes a sound");
+    }
+  }
+
+  class Pig : Animal  // Derived class (child) 
+  {
+    public override void animalSound()
+    {
+      Console.WriteLine("The pig says: wee wee");
+    }
+  }
+
+  class Dog : Animal  // Derived class (child) 
+  {
+    public override void animalSound()
+    {
+      Console.WriteLine("The dog says: bow wow");
+    }
+  }
+
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Animal myAnimal = new Animal();  // Create a Animal object
+      Animal myPig = new Pig();  // Create a Pig object
+      Animal myDog = new Dog();  // Create a Dog object
+      
+      myAnimal.animalSound();
+      myPig.animalSound();
+      myDog.animalSound();
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string firstName = "John ";
+      string lastName = "Doe";
+      string name = firstName + lastName;
+      Console.WriteLine(name);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      try
+      {
+        int[] myNumbers = {1, 2, 3};
+        Console.WriteLine(myNumbers[10]);
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine("Something went wrong.");
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // This is a comment
+      Console.WriteLine("Hello World!");    
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 3;
+      Console.WriteLine(x > y); // returns True because 5 is greater than 3
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 6;
+      Console.WriteLine(x + y);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine(3 + 3);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int myNum = 100000;
+      Console.WriteLine(myNum);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string greeting = "Hello";
+      Console.WriteLine(greeting);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      x++;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      double myNum = 19.99D;
+      Console.WriteLine(myNum);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int i = 0;
+      while (i < 10) 
+      {
+        Console.WriteLine(i);
+        i++;
+        if (i == 4) 
+        {
+          break;
+        }
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int myInt = 10;
+      double myDouble = 5.25;
+      bool myBool = true;
+
+      Console.WriteLine(Convert.ToString(myInt));    // Convert int to string
+      Console.WriteLine(Convert.ToDouble(myInt));    // Convert int to double
+      Console.WriteLine(Convert.ToInt32(myDouble));  // Convert double to int
+      Console.WriteLine(Convert.ToString(myBool));   // Convert bool to string
+      }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string name = "John";
+      Console.WriteLine("Hello " + name);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Car 
+  {
+    string color = "red";
+    int maxSpeed = 200;
+
+    static void Main(string[] args)
+    {
+      Car myObj = new Car();
+      Console.WriteLine(myObj.color);
+      Console.WriteLine(myObj.maxSpeed);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  // Interface
+  interface IAnimal 
+  {
+    void animalSound(); // interface method (does not have a body)
+  }
+
+  // Pig "implements" the IAnimal interface
+  class Pig : IAnimal 
+  {
+    public void animalSound() 
+    {
+      // The body of animalSound() is provided here
+      Console.WriteLine("The pig says: wee wee");
+    }
+  }
+
+  class Program 
+  {
+    static void Main(string[] args) 
+    {
+      Pig myPig = new Pig();  // Create a Pig object
+      myPig.animalSound();
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  interface IFirstInterface
+  {
+    void myMethod(); // interface method
+  }
+
+  interface ISecondInterface
+  {
+    void myOtherMethod(); // interface method
+  }
+
+  // Implement multiple interfaces
+  class DemoClass : IFirstInterface, ISecondInterface
+  {
+    public void myMethod()
+    {
+      Console.WriteLine("Some text..");
+    }
+    public void myOtherMethod()
+    {
+      Console.WriteLine("Some other text...");
+    }
+  }
+
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      DemoClass myObj = new DemoClass();
+      myObj.myMethod();
+      myObj.myOtherMethod();
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+      for (int i = 0; i < cars.Length; i++) 
+      {
+        Console.WriteLine(cars[i]);
+      }
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      x ^= 3;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+//filename: Car.cs
+using System;
+
+namespace MyApplication
+{
+  class Car 
+  {
+    string color;
+    int maxSpeed;
+
+    static void Main(string[] args)
+    {
+      Car myObj = new Car();
+      myObj.color = "red";
+      myObj.maxSpeed = 200;
+      Console.WriteLine(myObj.color);
+      Console.WriteLine(myObj.maxSpeed);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int time = 20;
+      if (time < 18) 
+      {
+        Console.WriteLine("Good day.");
+      } 
+      else 
+      {
+        Console.WriteLine("Good evening.");
+      }
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  // Create a Car class
+  class Car
+  {
+    public string model;  // Create a field
+
+    // Create a class constructor for the Car class
+    public Car()
+    {
+      model = "Mustang"; // Set the initial value for model
+    }
+
+    static void Main(string[] args)
+    {
+      Car Ford = new Car();  // Create an object of the Car Class (this will call the constructor)
+      Console.WriteLine(Ford.model);  // Print the value of model
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      float myNum = 5.75F;
+      Console.WriteLine(myNum);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void checkAge(int age)
+    {
+      if (age < 18)
+      {
+        throw new ArithmeticException("Access denied - You must be at least 18 years old.");
+      }
+      else
+      {
+        Console.WriteLine("Access granted - You are old enough!");
+      }
+    }
+
+    static void Main(string[] args)
+    {
+      checkAge(20);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      x *= 3;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void MyMethod(string child1, string child2, string child3)
+    {
+      Console.WriteLine("The youngest child is: " + child3);
+    }
+
+    static void Main(string[] args)
+    {
+      MyMethod(child3: "John", child1: "Liam", child2: "Liam");
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      /* The code below will print the words Hello World
+      to the screen, and it is amazing */
+      Console.WriteLine("Hello World!");    
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x, y, z;
+      x = y = z = 50;
+      Console.WriteLine(x + y + z);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      double myDouble = 9.78;
+      int myInt = (int) myDouble;  // Manual casting: double to int
+
+      Console.WriteLine(myDouble);
+      Console.WriteLine(myInt);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    enum Months
+    {
+      January,    // 0
+      February,   // 1
+      March,      // 2
+      April,      // 3
+      May,        // 4
+      June,       // 5
+      July        // 6
+    }
+    static void Main(string[] args)
+    {
+      int myNum = (int) Months.April;
+      Console.WriteLine(myNum);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.Write("Hello World! ");
+      Console.Write("I will print on the same line.");
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static int PlusMethodInt(int x, int y)
+    {
+      return x + y;
+    }
+
+    static double PlusMethodDouble(double x, double y)
+    {
+      return x + y;
+    }
+
+    static void Main(string[] args)
+    {
+      int myNum1 = PlusMethodInt(8, 5);
+      double myNum2 = PlusMethodDouble(4.3, 6.26);
+      Console.WriteLine("Int: " + myNum1);
+      Console.WriteLine("Double: " + myNum2);
+    }  
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string txt = "We are the so-called \"Vikings\" from the north.";
+      Console.WriteLine(txt);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    enum Level
+    {
+      Low,
+      Medium,
+      High
+    }
+    static void Main(string[] args)
+    {
+      Level myVar = Level.Medium;
+      switch(myVar) 
+      {
+        case Level.Low:
+          Console.WriteLine("Low level");
+          break;
+        case Level.Medium:
+          Console.WriteLine("Medium level");
+          break;
+        case Level.High:
+          Console.WriteLine("High level");
+          break;
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int myNum = 15;
+      myNum = 20;
+      Console.WriteLine(myNum);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void MyMethod()
+    {
+      Console.WriteLine("I just got executed!");
+    }
+
+    static void Main(string[] args)
+    {
+      MyMethod();
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine(Math.Sqrt(64));  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      x--;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 2;
+      Console.WriteLine(x % y);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int time = 22;
+      if (time < 10) 
+      {
+        Console.WriteLine("Good morning.");
+      } 
+      else if (time < 20) 
+      {
+        Console.WriteLine("Good day.");
+      } 
+      else 
+      {
+        Console.WriteLine("Good evening.");
+      }
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      Console.WriteLine(x > 3 || x < 4); // returns True because one of the conditions are True (5 is greater than 3, but 5 is not less than 4)
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Car
+  {
+    string color = "red";
+
+    static void Main(string[] args)
+    {
+      Car myObj = new Car();
+      Console.WriteLine(myObj.color);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string myString = "Hello";
+      Console.WriteLine(myString[0]);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      float f1 = 35e3F;
+      double d1 = 12E4D;
+      Console.WriteLine(f1);
+      Console.WriteLine(d1);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void MyMethod(string country = "Norway")
+    {
+      Console.WriteLine(country);
+    }
+
+    static void Main(string[] args)
+    {
+      MyMethod("Sweden");
+      MyMethod("India");
+      MyMethod();
+      MyMethod("USA");
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 3;
+      Console.WriteLine(x == y);  // returns False because 5 is not equal to 3
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+      foreach (string i in cars) 
+      {
+        Console.WriteLine(i);
+      }   
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int day = 4;
+      switch (day) 
+      {
+        case 6:
+          Console.WriteLine("Today is Saturday.");
+          break;
+        case 7:
+          Console.WriteLine("Today is Sunday.");
+          break;
+        default:
+          Console.WriteLine("Looking forward to the Weekend.");
+          break;
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      const int myNum = 15;
+      myNum = 20;
+      Console.WriteLine(myNum);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      x &= 3;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 3;
+      Console.WriteLine(x <= y); // returns False because 5 is neither less than or equal to 3
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static int MyMethod(int x, int y)
+    {
+      return x + y;
+    }
+
+    static void Main(string[] args)
+    {
+      int z = MyMethod(5, 3);
+      Console.WriteLine(z);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 6;
+      int sum = x + y;
+      Console.WriteLine(sum); // Print the sum of x + y
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      x %= 3;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 20;
+      int y = 18;
+      if (x > y)
+      {
+        Console.WriteLine("x is greater than y");
+      }
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void MyMethod(string fname, int age)
+    {
+      Console.WriteLine(fname + " is " + age);
+    }
+
+    static void Main(string[] args)
+    {
+      MyMethod("Liam", 5);
+      MyMethod("Jenny", 8);
+      MyMethod("Anja", 31);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine(Math.Round(9.99));
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static int PlusMethod(int x, int y)
+    {
+      return x + y;
+    }
+
+    static double PlusMethod(double x, double y)
+    {
+      return x + y;
+    }
+
+    static void Main(string[] args)
+    {
+      int myNum1 = PlusMethod(8, 5);
+      double myNum2 = PlusMethod(4.3, 6.26);
+      Console.WriteLine("Int: " + myNum1);
+      Console.WriteLine("Double: " + myNum2);
+    }  
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int sum1 = 100 + 50;     // 150 (100 + 50)
+      int sum2 = sum1 + 250;   // 400 (150 + 250)
+      int sum3 = sum2 + sum2;  // 800 (400 + 400)
+      Console.WriteLine(sum1);
+      Console.WriteLine(sum2);
+      Console.WriteLine(sum3);
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+      Console.WriteLine(cars[0]);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      Console.WriteLine(x > 3 && x < 10); // returns True because 5 is greater than 3 AND 5 is less than 10
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string greeting = "Hello World";
+      Console.WriteLine(greeting);
+    }
+  }
+}
+END_OF_CODE
+using System;
+using System.Linq;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int[] myNumbers = {5, 1, 8, 9};
+      Console.WriteLine(myNumbers.Max());  // largest value
+      Console.WriteLine(myNumbers.Min());  // smallest value
+      Console.WriteLine(myNumbers.Sum());  // sum of myNumbers
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      double x = 5;
+      x /= 3;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine(10 == 15); // returns False, because 10 is not equal to 15
+    }
+  }
+}
+END_OF_CODE
+//filename: Car.cs
+using System;
+
+namespace MyApplication
+{
+  class Car 
+  {
+    string model;
+    string color;
+    int year;
+
+    static void Main(string[] args)
+    {
+      Car Ford = new Car();
+      Ford.model = "Mustang";
+      Ford.color = "red";
+      Ford.year = 1969;
+
+      Car Opel = new Car();
+      Opel.model = "Astra";
+      Opel.color = "white";
+      Opel.year = 2005;
+
+      Console.WriteLine(Ford.model);
+      Console.WriteLine(Opel.model);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // Sort a string
+      string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+      Array.Sort(cars);
+      foreach (string i in cars)
+      {
+        Console.WriteLine(i);
+      }    
+      
+      // Sort an int
+      int[] myNumbers = {5, 1, 8, 9};
+      Array.Sort(myNumbers);
+      foreach (int i in myNumbers)
+      {
+        Console.WriteLine(i);
+      }
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 10;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 12;
+      int y = 3;
+      Console.WriteLine(x / y);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void MyMethod()
+    {
+      Console.WriteLine("I just got executed!");
+    }
+
+    static void Main(string[] args)
+    {
+      MyMethod();
+      MyMethod();
+      MyMethod();
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      for (int i = 0; i < 5; i++) 
+      {
+        Console.WriteLine(i);
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void MyMethod(string child1 = "Liam", string child2 = "Jenny", string child3 = "John")
+    {
+      Console.WriteLine(child3);
+    }
+
+    static void Main(string[] args)
+    {
+      MyMethod("child3");
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // Good
+      int minutesPerHour = 60;
+
+      // OK, but not so easy to understand what m actually is
+      int m = 60;
+      
+      Console.WriteLine(minutesPerHour);
+      Console.WriteLine(m);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 3;
+      Console.WriteLine(x >= y); // returns True because 5 is greater, or equal, to 3
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int myNum;
+      myNum = 15;
+      Console.WriteLine(myNum);
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string txt = "Hello World";
+      Console.WriteLine(txt.ToUpper());   // Outputs "HELLO WORLD"
+      Console.WriteLine(txt.ToLower());   // Outputs "hello world"
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int myNum = 15;
+      Console.WriteLine(myNum);
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      for (int i = 0; i < 10; i++) 
+      {
+        if (i == 4) 
+        {
+          break;
+        }
+        Console.WriteLine(i);
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine(10 > 9); // returns True, because 10 is higher than 9
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string firstName = "John";
+      string lastName = "Doe";
+      string name = $"My full name is: {firstName} {lastName}";
+      Console.WriteLine(name);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      x |= 3;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine(Math.Min(5, 10));  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace GetLastName
+{
+  class Program
+  {
+    static void Main()
+    {
+      // Full name
+      string name = "John Doe";
+
+      // Location of the letter D
+      int charPos = name.IndexOf("D");
+
+      // Get last name
+      string lastName = name.Substring(charPos);
+
+      // Print the result
+      Console.WriteLine(lastName);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5, y = 6, z = 50;
+      Console.WriteLine(x + y + z);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      for (int i = 0; i < 10; i++) 
+      {
+        if (i == 4) 
+        {
+          continue;
+        }
+        Console.WriteLine(i);
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Car
+  {
+    private string model = "Mustang";
+
+    static void Main(string[] args)
+    {
+      Car myObj = new Car();
+      Console.WriteLine(myObj.model);
+    }
+  }
+}
+END_OF_CODE
+//filename: Car.cs
+using System;
+
+namespace MyApplication
+{
+  class Car
+  {
+    public string model;
+
+    // Create a class constructor with a parameter
+    public Car(string modelName)
+    {
+      model = modelName;
+    }
+
+    static void Main(string[] args)
+    {
+      Car Ford = new Car("Mustang");
+      Console.WriteLine(Ford.model);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      if (20 > 18) 
+      {
+        Console.WriteLine("20 is greater than 18");
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");
+      Console.WriteLine("I am Learning C#");
+      Console.WriteLine("It is awesome!");
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine(Math.Max(5, 10));  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int time = 20;
+      string result = (time < 18) ? "Good day." : "Good evening.";
+      Console.WriteLine(result);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 10;
+      x += 5;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    enum Level
+    {
+      Low,
+      Medium,
+      High
+    }
+    static void Main(string[] args)
+    {
+      Level myVar = Level.Medium;
+      Console.WriteLine(myVar);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      x <<= 3;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string myString = "Hello";
+      Console.WriteLine(myString.IndexOf("e"));
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 3;
+      Console.WriteLine(x + y);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int myNum = 5;               // integer (whole number)
+      double myDoubleNum = 5.99D;  // floating point number
+      char myLetter = 'D';         // character
+      bool myBool = true;          // boolean
+      string myText = "Hello";     // string
+      Console.WriteLine(myNum);
+      Console.WriteLine(myDoubleNum);
+      Console.WriteLine(myLetter);
+      Console.WriteLine(myBool);
+      Console.WriteLine(myText);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      bool isCSharpFun = true;
+      bool isFishTasty = false;
+      Console.WriteLine(isCSharpFun);   // Outputs True
+      Console.WriteLine(isFishTasty);   // Outputs False    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      long myNum = 15000000000L;
+      Console.WriteLine(myNum);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static int MyMethod(int x, int y)
+    {
+      return x + y;
+    }
+
+    static void Main(string[] args)
+    {
+      Console.WriteLine(MyMethod(5, 3));
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Car
+  {
+    string color = "red";
+
+    static void Main(string[] args)
+    {
+      Car myObj1 = new Car();
+      Car myObj2 = new Car();
+      Console.WriteLine(myObj1.color);
+      Console.WriteLine(myObj2.color);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      Console.WriteLine("The length of the txt string is: " + txt.Length);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      x += 3;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static int MyMethod(int x)
+    {
+      return 5 + x;
+    }
+
+    static void Main(string[] args)
+    {
+      Console.WriteLine(MyMethod(3));
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int day = 4;
+      switch (day) 
+      {
+        case 1:
+          Console.WriteLine("Monday");
+          break;
+        case 2:
+          Console.WriteLine("Tuesday");
+          break;
+        case 3:
+          Console.WriteLine("Wednesday");
+          break;
+        case 4:
+          Console.WriteLine("Thursday");
+          break;
+        case 5:
+          Console.WriteLine("Friday");
+          break;
+        case 6:
+          Console.WriteLine("Saturday");
+          break;
+        case 7:
+          Console.WriteLine("Sunday");
+          break;
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 10;
+      Console.WriteLine(x == 10); // returns True, because the value of x is equal to 10
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 10;
+      int y = 9;
+      Console.WriteLine(x > y); // returns True, because 10 is higher than 9
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      try
+      {
+        int[] myNumbers = {1, 2, 3};
+        Console.WriteLine(myNumbers[10]);
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine(e.Message);
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 3;
+      Console.WriteLine(x - y);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      x -= 3;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string firstName = "John ";
+      string lastName = "Doe";
+      string name = string.Concat(firstName, lastName);
+      Console.WriteLine(name);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Animal  // Base class (parent) 
+  {
+    public void animalSound()
+    {
+      Console.WriteLine("The animal makes a sound");
+    }
+  }
+
+  class Pig : Animal  // Derived class (child) 
+  {
+    public void animalSound()
+    {
+      Console.WriteLine("The pig says: wee wee");
+    }
+  }
+
+  class Dog : Animal  // Derived class (child) 
+  {
+    public void animalSound()
+    {
+      Console.WriteLine("The dog says: bow wow");
+    }
+  }
+
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Animal myAnimal = new Animal();  // Create a Animal object
+      Animal myPig = new Pig();  // Create a Pig object
+      Animal myDog = new Dog();  // Create a Dog object
+      
+      myAnimal.animalSound();
+      myPig.animalSound();
+      myDog.animalSound();
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 100 + 50;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");  // This is a comment   
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      char myGrade = 'B';
+      Console.WriteLine(myGrade);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      try
+      {
+        int[] myNumbers = {1, 2, 3};
+        Console.WriteLine(myNumbers[10]);
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine("Something went wrong.");
+      }  
+      finally
+      {
+        Console.WriteLine("The 'try catch' is finished.");
+      }  
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void MyMethod(string fname) 
+    {
+      Console.WriteLine(fname + " Refsnes");
+    }
+
+    static void Main(string[] args)
+    {
+      MyMethod("Liam");
+      MyMethod("Jenny");
+      MyMethod("Anja");
+    }  
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      x >>= 3;
+      Console.WriteLine(x);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 3;
+      Console.WriteLine(x < y); // returns False because 5 is not less than 3
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int i = 0;
+      while (i < 5) 
+      {
+        Console.WriteLine(i);
+        i++;
+      }
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string firstName = "John ";
+      string lastName = "Doe";
+      string fullName = firstName + lastName;
+      Console.WriteLine(fullName);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // Declare an array
+      string[] cars;
+
+      // Add values, using new
+      cars = new string[] {"Volvo", "BMW", "Ford"};
+
+      // This would cause an error: cars = {"Volvo", "BMW", "Ford"};
+
+      Console.WriteLine(cars[0]);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    enum Months
+    {
+      January,    // 0
+      February,   // 1
+      March=6,    // 6
+      April,      // 7
+      May,        // 8
+      June,       // 9
+      July        // 10
+    }
+    static void Main(string[] args)
+    {
+      int myNum = (int) Months.April;
+      Console.WriteLine(myNum);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      for (int i = 0; i <= 10; i = i + 2)
+      {
+        Console.WriteLine(i);
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+      cars[0] = "Opel";
+      Console.WriteLine(cars[0]);    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int i = 0;
+      while (i < 10) 
+      {
+        if (i == 4) 
+        {
+          i++;
+          continue;
+        }
+        Console.WriteLine(i);
+        i++;
+      }    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Car
+  {
+    public string model;
+    public string color;
+    public int year;
+
+    // Create a class constructor with multiple parameters
+    public Car(string modelName, string modelColor, int modelYear)
+    {
+      model = modelName;
+      color = modelColor;
+      year = modelYear;
+    }
+
+    static void Main(string[] args)
+    {
+      Car Ford = new Car("Mustang", "Red", 1969);
+      Console.WriteLine(Ford.color + " " + Ford.year + " " + Ford.model);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine(Math.Abs(-4.7));  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  enum Level
+  {
+    Low,
+    Medium,
+    High
+  }
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Level myVar = Level.Medium;
+      Console.WriteLine(myVar);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 3;
+      Console.WriteLine(x != y);  // returns True because 5 is not equal to 3
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      int y = 3;
+      Console.WriteLine(x * y);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Car
+  {
+    string color;                 // field
+    int maxSpeed;                 // field
+    public void fullThrottle()    // method
+    {
+      Console.WriteLine("The car is going as fast as it can!");
+    }
+
+    static void Main(string[] args)
+    {
+      Car myObj = new Car();
+      myObj.fullThrottle();  // Call the method
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int myInt = 9;
+      double myDouble = myInt;  // Automatic casting: int to double
+
+      Console.WriteLine(myInt);
+      Console.WriteLine(myDouble);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+      Console.WriteLine(cars.Length);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string name = "John";
+      Console.WriteLine(name);  
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int i = 0;
+      do 
+      {
+        Console.WriteLine(i);
+        i++;
+      }
+      while (i < 5);
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");
+      Console.WriteLine("I will print on a new line.");
+
+      Console.Write("Hello World! ");
+      Console.Write("I will print on the same line.");    
+    }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int x = 5;
+      Console.WriteLine(!(x > 3 && x < 10)); // returns False because ! (not) is used to reverse the result
+     }
+  }
+}
+END_OF_CODE
+using System;
+
+namespace MyApplication
+{
+  // Abstract class
+  abstract class Animal
+  {
+    // Abstract method (does not have a body)
+    public abstract void animalSound();
+    // Regular method
+    public void sleep()
+    {
+      Console.WriteLine("Zzz");
+    }
+  }
+  
+  // Derived class (inherit from Animal)
+  class Pig : Animal
+  {
+    public override void animalSound()
+    {
+      // The body of animalSound() is provided here
+      Console.WriteLine("The pig says: wee wee");
+    }
+  }
+
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Pig myPig = new Pig();  // Create a Pig object
+      myPig.animalSound();
+      myPig.sleep();
+    }
+  }
+}
+END_OF_CODE

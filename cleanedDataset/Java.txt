@@ -1,0 +1,6180 @@
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    ++x;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    double myNum = 19.99d;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x -= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+import java.time.LocalDateTime;  // Import the LocalDateTime class
+import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter class
+
+public class Main {
+  public static void main(String[] args) {  
+    LocalDateTime myDateObj = LocalDateTime.now();  
+    System.out.println("Before Formatting: " + myDateObj);  
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E, MMM dd yyyy HH:mm:ss");  
+    
+    String formattedDate = myDateObj.format(myFormatObj);  
+    System.out.println("After Formatting: " + formattedDate);  
+  }  
+}  
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int i = 0;
+    while (i < 10) {
+      System.out.println(i);
+      i++;
+      if (i == 4) {
+        break;
+      }
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr1 = "HELLO";
+    String myStr2 = "hello";
+    System.out.println(myStr1.compareToIgnoreCase(myStr2));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello planet earth, you are a great planet.";
+    System.out.println(myStr.indexOf("e", 5));
+  }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    
+    // Use addLast() to add the item to the end
+    cars.addLast("Mazda");
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    System.out.println(capitalCities); 
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World!");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int time = 22;
+    if (time < 10) {
+      System.out.println("Good morning.");
+    } else if (time < 20) {
+      System.out.println("Good day.");
+    }  else {
+      System.out.println("Good evening.");
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String args[]) {
+    String firstName = "John";
+    String lastName = "Doe";
+    System.out.println(firstName + " " + lastName);
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet&lt;String> cars = new HashSet&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    cars.remove("Volvo");
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.acos(0.64));
+    System.out.println(Math.acos(-0.4));
+    System.out.println(Math.acos(0));
+    System.out.println(Math.acos(1));
+    System.out.println(Math.acos(-1));
+    System.out.println(Math.acos(2));
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;Integer> numbers = new ArrayList&lt;Integer>();
+    numbers.add(12);
+    numbers.add(8);
+    numbers.add(2);
+    numbers.add(23);
+    Iterator&lt;Integer> it = numbers.iterator();
+    while(it.hasNext()) {
+      Integer i = it.next();
+      if(i < 10) {
+        it.remove();
+      }
+    }
+    System.out.println(numbers);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr1 = "Hello";
+    String myStr2 = "";
+    System.out.println(myStr1.isEmpty());
+    System.out.println(myStr2.isEmpty());
+  }
+}
+
+END_OF_CODE
+public class Main extends Thread {
+  public static void main(String[] args) {
+    Main thread = new Main();
+    thread.start();
+    System.out.println("This code is outside of the thread");
+  }
+  public void run() {
+    System.out.println("This code is running in a thread");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int result = sum(10);
+    System.out.println(result);
+  }
+  public static int sum(int k) {
+    if (k > 0) {
+      return k + sum(k - 1);
+    } else {
+      return 0;
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String name = "John";
+    System.out.println("Hello " + name);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 6;
+    System.out.println(x + y); // Print the value of x + y
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myNum = 15;
+    myNum = 20;  // myNum is now 20
+    System.out.println(myNum);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    for (String i : cars) {
+      System.out.println(i);
+    }
+  } 
+}
+
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars);
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.sqrt(64));  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static int plusMethodInt(int x, int y) {
+    return x + y;
+  }
+  
+  static double plusMethodDouble(double x, double y) {
+    return x + y;
+  }
+  
+  public static void main(String[] args) {
+    int myNum1 = plusMethodInt(8, 5);
+    double myNum2 = plusMethodDouble(4.3, 6.26);
+    System.out.println("int: " + myNum1);
+    System.out.println("double: " + myNum2);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x < y); // returns false because 5 is not less than 3
+  }
+}
+
+END_OF_CODE
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myNum = 5;               // integer (whole number)
+    float myFloatNum = 5.99f;    // floating point number
+    char myLetter = 'D';         // character
+    boolean myBool = true;       // boolean
+    String myText = "Hello";     // String    
+    System.out.println(myNum);
+    System.out.println(myFloatNum);
+    System.out.println(myLetter);
+    System.out.println(myBool);
+    System.out.println(myText);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myNum = 100000;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String args[]) {
+    String firstName = "John";
+    String lastName = "Doe";
+    System.out.println(firstName + " " + lastName);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hello World";
+    System.out.println(txt.toUpperCase());
+    System.out.println(txt.toLowerCase());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    int y = 9;
+    System.out.println(x > y); // returns true, because 10 is higher than 9  
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars.get(0));
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    try {
+      int[] myNumbers = {1, 2, 3};
+      System.out.println(myNumbers[10]);
+    } catch (Exception e) {
+      System.out.println("Something went wrong.");
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    // This is a comment
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.function.Consumer;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(5);
+    numbers.add(9);
+    numbers.add(8);
+    numbers.add(1);
+    Consumer<Integer> method = (n) -> { System.out.println(n); };
+    numbers.forEach( method );
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x * y);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    char result = myStr.charAt(0);
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    int result = myStr.codePointAt(0);
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.print("Hello World! ");
+    System.out.print("I will print on the same line.");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    x += 5;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+class OuterClass {
+  int x = 10;
+
+  static class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass.InnerClass myInner = new OuterClass.InnerClass();
+    System.out.println(myInner.y);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 6;
+    System.out.println(x + y); // Print the value of x + y
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    boolean isJavaFun = true;
+    boolean isFishTasty = false;    
+    System.out.println(isJavaFun);
+    System.out.println(isFishTasty);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello planet earth, you are a great planet.";
+    System.out.println(myStr.lastIndexOf("planet"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myNum = 100000;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 6;
+    int sum = x + y;
+    System.out.println(sum); // Print the sum of x + y
+  }
+}
+
+END_OF_CODE
+public class Main {
+  final int x = 10;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 25; // will generate an error
+    System.out.println(myObj.x); 
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(3 + 3);
+  }
+}
+
+END_OF_CODE
+public class Main { 
+  public static void main(String[] args) { 
+    Integer myInt = 5; 
+    Double myDouble = 5.99; 
+    Character myChar = 'A'; 
+    System.out.println(myInt.intValue());
+    System.out.println(myDouble.doubleValue());
+    System.out.println(myChar.charValue());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+    int x = myNumbers[1][2];
+    System.out.println(x);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x %= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    byte myNum = 100;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "       Hello World!        ";
+    System.out.println(myStr);
+    System.out.println(myStr.trim());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String greeting = "Hello";
+    System.out.println(greeting);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int[] myNumbers = {1, 2, 3};
+    System.out.println(myNumbers[10]);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    ++x;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(10 > 9); // returns true, because 10 is higher than 9  
+  }
+}
+
+END_OF_CODE
+class Vehicle {
+  protected String brand = "Ford";
+  public void honk() {
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Car extends Vehicle {
+  private String modelName = "Mustang";
+  public static void main(String[] args) {
+    Car myFastCar = new Car();
+    myFastCar.honk();
+    System.out.println(myFastCar.brand + " " + myFastCar.modelName);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hel\blo World!";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  final int x = 10;
+  final double PI = 3.14;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 50; // will generate an error
+    myObj.PI = 25; // will generate an error
+    System.out.println(myObj.x); 
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod() {
+    System.out.println("I just got executed!");
+  }
+
+  public static void main(String[] args) {
+    myMethod();
+    myMethod();
+    myMethod();
+  }
+}
+
+END_OF_CODE
+// Import the HashMap class
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+
+    // Create a HashMap object called people
+    HashMap&lt;String, Integer> people = new HashMap&lt;String, Integer>();
+
+    // Add keys and values (Name, Age)
+    people.put("John", 32);
+    people.put("Steve", 30);
+    people.put("Angie", 33);
+
+    for (String i : people.keySet()) {
+      System.out.println("Name: " + i + " Age: " + people.get(i));
+    }
+  }
+}
+
+END_OF_CODE
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
+}
+
+public class Main { 
+  public static void main(String[] args) { 
+    for (Level myVar : Level.values()) {
+      System.out.println(myVar);
+    }
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj1 = new Main();
+    Main myObj2 = new Main();
+    System.out.println(myObj1.x);
+    System.out.println(myObj2.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x ^= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int time = 20;
+    if (time < 18) {
+      System.out.println("Good day.");
+    } else {
+      System.out.println("Good evening.");
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    byte myNum = 100;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    char myVar1 = 65, myVar2 = 66, myVar3 = 67;
+    System.out.println(myVar1);
+    System.out.println(myVar2);
+    System.out.println(myVar3);
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet<String> cars = new HashSet<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    for (String i : cars) {
+      System.out.println(i);
+    }
+  }
+}
+
+END_OF_CODE
+final class MyClass {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+interface StringFunction {
+  String run(String str);
+}
+
+public class Main {
+  public static void main(String[] args) {
+    StringFunction exclaim = (s) -> s + "!";
+    StringFunction ask = (s) -> s + "?";
+    printFormatted("Hello", exclaim);
+    printFormatted("Hello", ask);
+  }
+  public static void printFormatted(String str, StringFunction format) {
+    String result = format.run(str);
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    
+    // Use removeFirst() remove the first item from the list
+    cars.removeFirst();
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+// Create a Main class
+public class Main {
+  int x;
+
+  // Create a class constructor for the Main class
+  public Main() {
+    x = 5;
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars);
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  static void checkAge(int age) { 
+    if (age < 18) {
+      throw new ArithmeticException("Access denied - You must be at least 18 years old."); 
+    } else {
+      System.out.println("Access granted - You are old enough!"); 
+    }
+ } 
+ 
+ public static void main(String[] args) { 
+   checkAge(15); 
+ } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x *= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    float myNum = 5.75f;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String greeting = "Hello";
+    System.out.println(greeting);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello planet earth, you are a great planet.";
+    System.out.println(myStr.indexOf("planet"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    int result = myStr.codePointAt(0);
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    /* The code below will print the words Hello World
+    to the screen, and it is amazing */
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+
+    // Create a HashSet object called numbers
+    HashSet&lt;Integer> numbers = new HashSet&lt;Integer>();
+
+    // Add values to the set
+    numbers.add(4);
+    numbers.add(7);
+    numbers.add(8);
+
+    // Show which numbers between 1 and 10 are in the set
+    for(int i = 1; i <= 10; i++) {
+      if(numbers.contains(i)) {
+        System.out.println(i + " was found in the set.");
+      } else {
+        System.out.println(i + " was not found in the set.");
+      }
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.random());  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x, y, z;
+    x = y = z = 50;
+    System.out.println(x + y + z);
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet&lt;String> cars = new HashSet&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    System.out.println(cars.size());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int day = 4;
+    switch (day) {
+      case 6:
+        System.out.println("Today is Saturday");
+        break;
+      case 7:
+        System.out.println("Today is Sunday");
+        break;
+      default:
+        System.out.println("Looking forward to the Weekend");
+    }    
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet&lt;String> cars = new HashSet&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    cars.clear();
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+// Create a Main class
+public class Main {
+ 
+  // Create a fullThrottle() method
+  public void fullThrottle() {
+    System.out.println("The car is going as fast as it can!");
+  }
+
+  // Create a speed() method and add a parameter
+  public void speed(int maxSpeed) {
+    System.out.println("Max speed is: " + maxSpeed);
+  }
+
+  // Inside main, call the methods on the myCar object
+  public static void main(String[] args) {
+    Main myCar = new Main();     // Create a myCar object
+    myCar.fullThrottle();      // Call the fullThrottle() method
+    myCar.speed(200);          // Call the speed() method
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    for (int i = 0; i < cars.size(); i++) {
+      System.out.println(cars.get(i));
+    }
+  } 
+}
+
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    int result = myStr.codePointBefore(1);
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.contentEquals("Hello"));
+    System.out.println(myStr.contentEquals("e"));
+    System.out.println(myStr.contentEquals("Hi"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x > 3 || x < 4); // returns true because one of the conditions are true (5 is greater than 3, but 5 is not less than 4)
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    capitalCities.remove("England");
+    System.out.println(capitalCities); 
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hello\nWorld!";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt; // Automatic casting: int to double
+
+    System.out.println(myInt);
+    System.out.println(myDouble);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x < y); // returns false because 5 is not less than 3
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int i = 0;
+    while (i < 5) {
+      System.out.println(i);
+      i++;
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    boolean isJavaFun = true;
+    boolean isFishTasty = false;    
+    System.out.println(isJavaFun);
+    System.out.println(isFishTasty);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String firstName = "John ";
+    String lastName = "Doe";
+    System.out.println(firstName.concat(lastName));
+  }
+}
+
+END_OF_CODE
+public class Main {  
+  public static void main(String[] args) {  
+    Main myObj = new Main();  
+    System.out.println(myObj instanceof Main); 
+  }  
+} 
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet<String> cars = new HashSet<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    for (String i : cars) {
+      System.out.println(i);
+    }
+  }
+}
+
+END_OF_CODE
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void sleep(); // interface method (does not have a body)
+}
+
+class Pig implements Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig();
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x > 3 && x < 10); // returns true because 5 is greater than 3 AND 5 is less than 10
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {   
+    int time = 20;
+    String result;
+    result = (time < 18) ? "Good day." : "Good evening.";
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    cars.remove(0);
+    System.out.println(cars);
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  static void checkAge(int age) { 
+    if (age < 18) {
+      throw new ArithmeticException("Access denied - You must be at least 18 years old."); 
+    } else {
+      System.out.println("Access granted - You are old enough!"); 
+    }
+ } 
+ 
+ public static void main(String[] args) { 
+   checkAge(15); 
+ } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x += 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    System.out.println(capitalCities.get("England"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void checkAge(int age) { 
+    if (age < 18) {
+      throw new ArithmeticException("Access denied - You must be at least 18 years old."); 
+    } else {
+      System.out.println("Access granted - You are old enough!"); 
+    }
+ } 
+ 
+ public static void main(String[] args) { 
+   checkAge(20); 
+ } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    for (int i = 0; i < cars.length; i++) {
+      System.out.println(cars[i]);
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x *= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 10; i++) {
+      if (i == 4) {
+        break;
+      }
+      System.out.println(i);
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello planet earth, you are a great planet.";
+    System.out.println(myStr.lastIndexOf("e", 5));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Please locate where 'locate' occurs!";
+    System.out.println(txt.indexOf("locate"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    int result = myStr.codePointBefore(1);
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static int plusMethod(int x, int y) {
+    return x + y;
+  }
+  
+  static double plusMethod(double x, double y) {
+    return x + y;
+  }
+  
+  public static void main(String[] args) {
+    int myNum1 = plusMethod(8, 5);
+    double myNum2 = plusMethod(4.3, 6.26);
+    System.out.println("int: " + myNum1);
+    System.out.println("double: " + myNum2);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 2;
+    System.out.println(x % y);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static int myMethod(int x) {
+    return 5 + x;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(myMethod(3));
+  }
+}
+
+END_OF_CODE
+import java.time.LocalDateTime;  // import the LocalDateTime class
+
+public class Main {  
+  public static void main(String[] args) {  
+    LocalDateTime myObj = LocalDateTime.now();
+    System.out.println(myObj);
+  }  
+}  
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    
+    Collections.sort(cars);
+
+    for (String i : cars) {
+      System.out.println(i);
+    }
+  } 
+}
+
+END_OF_CODE
+class Person {
+  String fname = "John";
+  String lname = "Doe";
+  String email = "john@doe.com";
+  int age = 24;
+  
+  public static void main(String[] args) {
+    Person myObj = new Person();
+    System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+    System.out.println("Email: " + myObj.email);
+    System.out.println("Age: " + myObj.age);
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    System.out.println(capitalCities.size());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  final int x = 10;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 25; // will generate an error
+    System.out.println(myObj.x); 
+  }
+}
+
+END_OF_CODE
+// Create a Main class
+public class Main {
+  int x;
+
+  // Create a class constructor for the Main class
+  public Main() {
+    x = 5;
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    System.out.println("The length of the txt string is: " + txt.length());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int time = 22;
+    if (time < 10) {
+      System.out.println("Good morning.");
+    } else if (time < 20) {
+      System.out.println("Good day.");
+    }  else {
+      System.out.println("Good evening.");
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    cars[0] = "Opel";
+    System.out.println(cars[0]);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 2;
+    System.out.println(x % y);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hello\rWorld!";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x > 3 || x < 4); // returns true because one of the conditions are true (5 is greater than 3, but 5 is not less than 4)
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod() {
+    System.out.println("Hello World!");
+  }
+
+  public static void main(String[] args) {
+    myMethod();
+  }
+}
+
+END_OF_CODE
+interface FirstInterface {
+  public void myMethod(); // interface method
+}
+
+interface SecondInterface {
+  public void myOtherMethod(); // interface method
+}
+
+// DemoClass "implements" FirstInterface and SecondInterface
+class DemoClass implements FirstInterface, SecondInterface {
+  public void myMethod() {
+    System.out.println("Some text..");
+  }
+  public void myOtherMethod() {
+    System.out.println("Some other text...");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    DemoClass myObj = new DemoClass();
+    myObj.myMethod();
+    myObj.myOtherMethod();
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.acos(0.64));
+    System.out.println(Math.acos(-0.4));
+    System.out.println(Math.acos(0));
+    System.out.println(Math.acos(1));
+    System.out.println(Math.acos(-1));
+    System.out.println(Math.acos(2));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    for (String i : cars) {
+      System.out.println(i);
+    }    
+  }
+}
+
+END_OF_CODE
+public class Main extends Thread {
+  public static void main(String[] args) {
+    Main thread = new Main();
+    thread.start();
+    System.out.println("This code is outside of the thread");
+  }
+  public void run() {
+    System.out.println("This code is running in a thread");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    if (20 > 18) {
+      System.out.println("20 is greater than 18"); // obviously
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World!");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  private String fname = "John";
+  private String lname = "Doe";
+  private String email = "john@doe.com";
+  private int age = 24;
+  
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+    System.out.println("Email: " + myObj.email);
+    System.out.println("Age: " + myObj.age);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hello World";
+    System.out.println(txt.toUpperCase());
+    System.out.println(txt.toLowerCase());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.random());  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int randomNum = (int)(Math.random() * 101);  // 0 to 100
+    System.out.println(randomNum);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static int plusMethodInt(int x, int y) {
+    return x + y;
+  }
+  
+  static double plusMethodDouble(double x, double y) {
+    return x + y;
+  }
+  
+  public static void main(String[] args) {
+    int myNum1 = plusMethodInt(8, 5);
+    double myNum2 = plusMethodDouble(4.3, 6.26);
+    System.out.println("int: " + myNum1);
+    System.out.println("double: " + myNum2);
+  }
+}
+
+END_OF_CODE
+// Import the HashMap class
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+
+    // Create a HashMap object called people
+    HashMap&lt;String, Integer> people = new HashMap&lt;String, Integer>();
+
+    // Add keys and values (Name, Age)
+    people.put("John", 32);
+    people.put("Steve", 30);
+    people.put("Angie", 33);
+
+    for (String i : people.keySet()) {
+      System.out.println("Name: " + i + " Age: " + people.get(i));
+    }
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+  public static void main(String[] args) {
+  
+    // Make a collection
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+  
+    // Get the iterator
+    Iterator&lt;String> it = cars.iterator();
+    
+    // Loop through a collection
+    while(it.hasNext()) {
+      System.out.println(it.next());
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void checkAge(int age) throws ArithmeticException { 
+    if (age < 18) {
+      throw new ArithmeticException("Access denied - You must be at least 18 years old."); 
+    } else {
+      System.out.println("Access granted - You are old enough!"); 
+    }
+ } 
+ 
+ public static void main(String[] args) { 
+   checkAge(15); 
+ } 
+}
+
+END_OF_CODE
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "It\'s alright.";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "We are the so-called \"Vikings\" from the north.";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
+}
+
+public class Main { 
+  public static void main(String[] args) {
+    Level myVar = Level.MEDIUM; 
+                
+    switch(myVar) {
+      case LOW:
+        System.out.println("Low level");
+        break;
+      case MEDIUM:
+        System.out.println("Medium level");
+        break;
+      case HIGH:
+        System.out.println("High level");
+        break;
+    }
+  }
+}
+
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 12;
+    int y = 3;
+    System.out.println(x / y);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x >= y); // returns true because 5 is greater, or equal, to 3
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x <= y); // returns false because 5 is neither less than or equal to 3
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet&lt;String> cars = new HashSet&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    System.out.println(cars.contains("Mazda"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+
+    // Code here CANNOT use x
+
+    { // This is a block
+
+      // Code here CANNOT use x
+
+      int x = 100;
+
+      // Code here CAN use x
+      System.out.println(x);
+
+   } // The block ends here
+
+  // Code here CANNOT use x
+  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String x = "10";
+    String y = "20";
+    String z = x + y;
+    System.out.println(z);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.sqrt(64));  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    final int myNum = 15;
+    myNum = 20; // will generate an error
+    System.out.println(myNum);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x >= y); // returns true because 5 is greater, or equal, to 3
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt1 = "It's alright";
+    String txt2 = "That's great";
+    System.out.println(txt1);
+    System.out.println(txt2);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod() {
+    System.out.println("I just got executed!");
+  }
+
+  public static void main(String[] args) {
+    myMethod();
+  }
+}
+
+END_OF_CODE
+public class Main extends Thread {
+  public static int amount = 0;
+
+  public static void main(String[] args) {
+    Main thread = new Main();
+    thread.start();
+    System.out.println(amount);
+    amount++;
+    System.out.println(amount);
+  }
+
+  public void run() {
+    amount++;
+  }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    
+    // Use getFirst() to display the first item in the list
+    System.out.println(cars.getFirst());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  int x = 10;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 25; // x is now 25
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    --x;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;Integer> myNumbers = new ArrayList&lt;Integer>();
+    myNumbers.add(10);
+    myNumbers.add(15);
+    myNumbers.add(20);
+    myNumbers.add(25);
+    for (int i : myNumbers) {
+      System.out.println(i);
+    }
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int result = sum(10);
+    System.out.println(result);
+  }
+  public static int sum(int k) {
+    if (k > 0) {
+      return k + sum(k - 1);
+    } else {
+      return 0;
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    char myGrade = 'B';
+    System.out.println(myGrade);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    try {
+      int[] myNumbers = {1, 2, 3};
+      System.out.println(myNumbers[10]);
+    } catch (Exception e) {
+      System.out.println("Something went wrong.");
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x == y); // returns false because 5 is not equal to 3
+  }
+}
+
+END_OF_CODE
+class OuterClass {
+  int x = 10;
+
+  private class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.y + myOuter.x);
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet&lt;String> cars = new HashSet&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+
+    // Code here CANNOT use x
+
+    { // This is a block
+
+      // Code here CANNOT use x
+
+      int x = 100;
+
+      // Code here CAN use x
+      System.out.println(x);
+
+   } // The block ends here
+
+  // Code here CANNOT use x
+  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    System.out.println(txt.length());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int i = 0;
+    while (i < 10) {
+      if (i == 4) {
+        i++;
+        continue;
+      }
+      System.out.println(i);
+      i++;
+    }  
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars);
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    System.out.println(cars[0]);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String x = "10";
+    String y = "20";
+    String z = x + y;
+    System.out.println(z);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int sum1 = 100 + 50;
+    int sum2 = sum1 + 250;
+    int sum3 = sum2 + sum2;
+    System.out.println(sum1);
+    System.out.println(sum2);
+    System.out.println(sum3);  
+  }
+}
+
+END_OF_CODE
+class Person {
+  protected String fname = "John";
+  protected String lname = "Doe";
+  protected String email = "john@doe.com";
+  protected int age = 24;
+}
+
+class Student extends Person {
+  private int graduationYear = 2018;
+  public static void main(String[] args) {
+    Student myObj = new Student();
+    System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+    System.out.println("Email: " + myObj.email);
+    System.out.println("Age: " + myObj.age);
+    System.out.println("Graduation Year: " + myObj.graduationYear);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    
+    Collections.sort(cars);
+
+    for (String i : cars) {
+      System.out.println(i);
+    }
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hel\blo World!";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    
+    // Use removeFirst() remove the first item from the list
+    cars.removeFirst();
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x > 3 && x < 10); // returns true because 5 is greater than 3 AND 5 is less than 10
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    --x;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.max(5, 10));  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  int x;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 40;
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String x = "10";
+    int y = 20;
+    String z = x + y;
+    System.out.println(z);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String greeting = "Hello World";
+    System.out.println(greeting);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static int myMethod(int x) {
+    return 5 + x;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(myMethod(3));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    long myNum = 15000000000L;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+   public static void main(String[] args) {
+     int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+     for (int i = 0; i < myNumbers.length; ++i) {
+        for(int j = 0; j < myNumbers[i].length; ++j) {
+           System.out.println(myNumbers[i][j]);
+        }
+     }
+   }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    
+    // Use addFirst() to add the item to the beginning
+    cars.addFirst("Mazda");
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x != y); // returns true because 5 is not equal to 3
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    int y = 20;
+    int z = x + y;
+    System.out.println(z);
+  }
+}
+
+END_OF_CODE
+final class MyClass {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+interface StringFunction {
+  String run(String str);
+}
+
+public class Main {
+  public static void main(String[] args) {
+    StringFunction exclaim = (s) -> s + "!";
+    StringFunction ask = (s) -> s + "?";
+    printFormatted("Hello", exclaim);
+    printFormatted("Hello", ask);
+  }
+  public static void printFormatted(String str, StringFunction format) {
+    String result = format.run(str);
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    double x = 5;
+    x /= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hello\nWorld!";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void checkAge(int age) throws ArithmeticException { 
+    if (age < 18) {
+      throw new ArithmeticException("Access denied - You must be at least 18 years old."); 
+    } else {
+      System.out.println("Access granted - You are old enough!"); 
+    }
+ } 
+ 
+ public static void main(String[] args) { 
+   checkAge(15); 
+ } 
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod(int x) {
+    System.out.println(x);
+  }
+
+  public static void main(String[] args) {
+    myMethod(10);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(15 == 10); // returns false, because 10 is not equal to 15
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "       Hello World!        ";
+    System.out.println(myStr);
+    System.out.println(myStr.trim());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  String fname = "John";
+  String lname = "Doe";
+  int age = 24;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+    System.out.println("Age: " + myObj.age);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    float f1 = 35e3f;
+    double d1 = 12E4d;
+    System.out.println(f1);
+    System.out.println(d1);  
+  }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    
+    // Use removeLast() remove the last item from the list
+    cars.removeLast();
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    int result = myStr.codePointCount(0, 5);
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+import java.time.LocalDateTime;  // Import the LocalDateTime class
+import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter class
+
+public class Main {
+  public static void main(String[] args) {  
+    LocalDateTime myDateObj = LocalDateTime.now();  
+    System.out.println("Before Formatting: " + myDateObj);  
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss");  
+    
+    String formattedDate = myDateObj.format(myFormatObj);  
+    System.out.println("After Formatting: " + formattedDate);  
+  }  
+}  
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    for (String i : cars) {
+      System.out.println(i);
+    }    
+  }
+}
+
+END_OF_CODE
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
+}
+
+public class Main { 
+  public static void main(String[] args) { 
+    for (Level myVar : Level.values()) {
+      System.out.println(myVar);
+    }
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int randomNum = (int)(Math.random() * 101);  // 0 to 100
+    System.out.println(randomNum);
+  }
+}
+
+END_OF_CODE
+public class Main extends Thread {
+  public static int amount = 0;
+
+  public static void main(String[] args) {
+    Main thread = new Main();
+    thread.start();
+    System.out.println(amount);
+    amount++;
+    System.out.println(amount);
+  }
+
+  public void run() {
+    amount++;
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    cars.clear();
+    System.out.println(cars);
+  } 
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    
+    for (String i : capitalCities.values()) {
+      System.out.println(i);
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int day = 4;
+    switch (day) {
+      case 6:
+        System.out.println("Today is Saturday");
+        break;
+      case 7:
+        System.out.println("Today is Sunday");
+        break;
+      default:
+        System.out.println("Looking forward to the Weekend");
+    }    
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(!(x > 3 && x < 10)); // returns false because ! (not) is used to reverse the result
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x &= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    double x = 5;
+    x /= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 6;
+    int sum = x + y;
+    System.out.println(sum); // Print the sum of x + y
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 20;
+    int y = 18;
+    if (x > y) {
+      System.out.println("x is greater than y");
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x %= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.print("Hello World! ");
+    System.out.print("I will print on the same line.");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.contains("Hel"));
+    System.out.println(myStr.contains("e"));
+    System.out.println(myStr.contains("Hi"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello planet earth, you are a great planet.";
+    System.out.println(myStr.indexOf("planet"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hello\rWorld!";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 100 + 50;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.min(5, 10));  
+  }
+}
+
+END_OF_CODE
+import java.time.LocalDateTime;  // Import the LocalDateTime class
+import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter class
+
+public class Main {
+  public static void main(String[] args) {  
+    LocalDateTime myDateObj = LocalDateTime.now();  
+    System.out.println("Before Formatting: " + myDateObj);  
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");  
+    
+    String formattedDate = myDateObj.format(myFormatObj);  
+    System.out.println("After Formatting: " + formattedDate);  
+  }  
+}  
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    System.out.println(capitalCities.size());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static int plusMethod(int x, int y) {
+    return x + y;
+  }
+  
+  static double plusMethod(double x, double y) {
+    return x + y;
+  }
+  
+  public static void main(String[] args) {
+    int myNum1 = plusMethod(8, 5);
+    double myNum2 = plusMethod(4.3, 6.26);
+    System.out.println("int: " + myNum1);
+    System.out.println("double: " + myNum2);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod(String fname, int age) {
+    System.out.println(fname + " is " + age);
+  }
+
+  public static void main(String[] args) {
+    myMethod("Liam", 5);
+    myMethod("Jenny", 8);
+    myMethod("Anja", 31);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static int myMethod(int x, int y) {
+    return x + y;
+  }
+
+  public static void main(String[] args) {
+    int z = myMethod(5, 3);
+    System.out.println(z);
+  }
+}
+
+END_OF_CODE
+class Person {
+  protected String fname = "John";
+  protected String lname = "Doe";
+  protected String email = "john@doe.com";
+  protected int age = 24;
+}
+
+class Student extends Person {
+  private int graduationYear = 2018;
+  public static void main(String[] args) {
+    Student myObj = new Student();
+    System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+    System.out.println("Email: " + myObj.email);
+    System.out.println("Age: " + myObj.age);
+    System.out.println("Graduation Year: " + myObj.graduationYear);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5, y = 6, z = 50;
+    System.out.println(x + y + z);
+  }
+}
+
+END_OF_CODE
+public class Main { 
+  public static void main(String[] args) { 
+    Integer myInt = 100; 
+    String myString = myInt.toString();
+    System.out.println(myString.length());
+  }
+}
+
+END_OF_CODE
+import java.time.LocalDateTime;  // Import the LocalDateTime class
+import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter class
+
+public class Main {
+  public static void main(String[] args) {  
+    LocalDateTime myDateObj = LocalDateTime.now();  
+    System.out.println("Before formatting: " + myDateObj);  
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");  
+    
+    String formattedDate = myDateObj.format(myFormatObj);  
+    System.out.println("After formatting: " + formattedDate);  
+  }  
+}  
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.replace('l', 'p'));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj1 = new Main();
+    Main myObj2 = new Main();
+    myObj2.x = 25;
+    System.out.println(myObj1.x);
+    System.out.println(myObj2.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x |= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.min(5, 10));  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5, y = 6, z = 50;
+    System.out.println(x + y + z);
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    System.out.println(capitalCities); 
+  }
+}
+
+END_OF_CODE
+import java.time.LocalDateTime;  // import the LocalDateTime class
+
+public class Main {  
+  public static void main(String[] args) {  
+    LocalDateTime myObj = LocalDateTime.now();
+    System.out.println(myObj);
+  }  
+}  
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hello World";
+    System.out.println(txt.toUpperCase());
+    System.out.println(txt.toLowerCase());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 10; i++) {
+      if (i == 4) {
+        continue;
+      }
+      System.out.println(i);
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String firstName = "John ";
+    String lastName = "Doe";
+    System.out.println(firstName.concat(lastName));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "It\'s alright.";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void sleep(); // interface method (does not have a body)
+}
+
+class Pig implements Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig();
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+
+END_OF_CODE
+public class Main { 
+  enum Level {
+    LOW,
+    MEDIUM,
+    HIGH
+  }
+
+  public static void main(String[] args) { 
+    Level myVar = Level.MEDIUM; 
+    System.out.println(myVar); 
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  int x;
+
+  public Main(int y) {
+    x = y;
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main(5);
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod(int x) {
+    System.out.println(x);
+  }
+
+  public static void main(String[] args) {
+    myMethod(10);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myNum;
+    myNum = 15;
+    System.out.println(myNum);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    char[] myStr1 = {'H', 'e', 'l', 'l', 'o'};
+    String myStr2 = "";
+    myStr2 = myStr2.copyValueOf(myStr1, 0, 5);
+    System.out.println("Returned String: " + myStr2);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "We are the so-called \"Vikings\" from the north.";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hello World";
+    System.out.println(txt.toUpperCase());
+    System.out.println(txt.toLowerCase());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  int x;
+
+  public Main(int y) {
+    x = y;
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main(5);
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    short myNum = 5000;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    if (20 > 18) {
+      System.out.println("20 is greater than 18"); // obviously
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    // This is a comment
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x &= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main extends Thread {
+  public static int amount = 0;
+
+  public static void main(String[] args) {
+    Main thread = new Main();
+    thread.start();
+    // Wait for the thread to finish
+    while(thread.isAlive()) {
+      System.out.println("Waiting...");
+    }
+    // Update amount and print its value
+    System.out.println("Main: " + amount);
+    amount++;
+    System.out.println("Main: " + amount);
+  }
+  public void run() {
+    amount++;
+  }
+}
+
+END_OF_CODE
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+  public static void main(String[] args) {
+    Pattern pattern = Pattern.compile("w3schools", Pattern.CASE_INSENSITIVE);
+    Matcher matcher = pattern.matcher("Visit W3Schools!");
+    boolean matchFound = matcher.find();
+    if(matchFound) {
+      System.out.println("Match found");
+    } else {
+      System.out.println("Match not found");
+    }
+  }
+}
+
+END_OF_CODE
+class Vehicle {
+  protected String brand = "Ford";
+  public void honk() {
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Car extends Vehicle {
+  private String modelName = "Mustang";
+  public static void main(String[] args) {
+    Car myFastCar = new Car();
+    myFastCar.honk();
+    System.out.println(myFastCar.brand + " " + myFastCar.modelName);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr1 = "Hello";
+    String myStr2 = "Hello";
+    String myStr3 = "Another String";
+    System.out.println(myStr1.equals(myStr2));
+    System.out.println(myStr1.equals(myStr3));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(3 + 3);
+  }
+}
+
+END_OF_CODE
+public class Main { 
+  int x; 
+ 
+  // Constructor with a parameter
+  public Main(int x) { 
+    this.x = x; 
+  } 
+
+  // Call the constructor
+  public static void main(String[] args)  { 
+    Main myObj = new Main(5); 
+    System.out.println("Value of x = " + myObj.x);
+  } 
+} 
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.abs(-4.7));  
+    System.out.println(Math.abs(4.7));  
+    System.out.println(Math.abs(3));  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    capitalCities.clear();
+    System.out.println(capitalCities); 
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.hashCode());
+  }
+}
+
+END_OF_CODE
+public class Main extends Thread {
+  public static int amount = 0;
+
+  public static void main(String[] args) {
+    Main thread = new Main();
+    thread.start();
+    // Wait for the thread to finish
+    while(thread.isAlive()) {
+      System.out.println("Waiting...");
+    }
+    // Update amount and print its value
+    System.out.println("Main: " + amount);
+    amount++;
+    System.out.println("Main: " + amount);
+  }
+  public void run() {
+    amount++;
+  }
+}
+
+END_OF_CODE
+public class Main {
+  private String fname = "John";
+  private String lname = "Doe";
+  private String email = "john@doe.com";
+  private int age = 24;
+  
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+    System.out.println("Email: " + myObj.email);
+    System.out.println("Age: " + myObj.age);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.startsWith("Hel"));
+    System.out.println(myStr.startsWith("llo"));
+    System.out.println(myStr.startsWith("o"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  int x;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 40;
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    capitalCities.remove("England");
+    System.out.println(capitalCities); 
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    
+    for (String i : capitalCities.keySet()) {
+      System.out.println("key: " + i + " value: " + capitalCities.get(i));
+    }
+  }
+}
+
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.hashCode());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+  public static void main(String[] args) {
+  
+    // Make a collection
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+  
+    // Get the iterator
+    Iterator&lt;String> it = cars.iterator();
+  
+    // Print the first item
+    System.out.println(it.next());
+  }
+}
+
+END_OF_CODE
+import java.time.LocalDateTime;  // Import the LocalDateTime class
+import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter class
+
+public class Main {
+  public static void main(String[] args) {  
+    LocalDateTime myDateObj = LocalDateTime.now();  
+    System.out.println("Before Formatting: " + myDateObj);  
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E, MMM dd yyyy HH:mm:ss");  
+    
+    String formattedDate = myDateObj.format(myFormatObj);  
+    System.out.println("After Formatting: " + formattedDate);  
+  }  
+}  
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 12;
+    int y = 3;
+    System.out.println(x / y);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello planet earth, you are a great planet.";
+    System.out.println(myStr.lastIndexOf("e", 5));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod() {
+    System.out.println("I just got executed!");
+  }
+
+  public static void main(String[] args) {
+    myMethod();
+    myMethod();
+    myMethod();
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    System.out.println(cars[0]);
+  }
+}
+
+END_OF_CODE
+final class Vehicle {
+  protected String brand = "Ford";
+  public void honk() {
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Main extends Vehicle {
+  private String modelName = "Mustang";
+  public static void main(String[] args) {
+    Main myFastCar = new Main();
+    myFastCar.honk();
+    System.out.println(myFastCar.brand + " " + myFastCar.modelName);
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet&lt;String> cars = new HashSet&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    System.out.println(cars.size());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x <<= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+import java.time.LocalTime;  // import the LocalTime class
+
+public class Main {  
+  public static void main(String[] args) {  
+    LocalTime myObj = LocalTime.now();
+    System.out.println(myObj);
+  }  
+}  
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 5; i++) {
+      System.out.println(i);
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "The character \\ is called backslash.";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    // Good
+    int minutesPerHour = 60;
+
+    // OK, but not so easy to understand what m actually is
+    int m = 60;
+    
+    System.out.println(minutesPerHour);
+    System.out.println(m);
+  }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars);
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    double myDouble = 9.78d;
+    int myInt = (int) myDouble; // Explicit casting: double to int
+
+    System.out.println(myDouble);
+    System.out.println(myInt);
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet&lt;String> cars = new HashSet&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    cars.clear();
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+public class Main {
+   public static void main(String[] args) {
+     int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+     for (int i = 0; i < myNumbers.length; ++i) {
+        for(int j = 0; j < myNumbers[i].length; ++j) {
+           System.out.println(myNumbers[i][j]);
+        }
+     }
+   }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    final int myNum = 15;
+    myNum = 20; // will generate an error
+    System.out.println(myNum);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    char result = myStr.charAt(0);
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myNum;
+    myNum = 15;
+    System.out.println(myNum);
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    
+    for (String i : capitalCities.keySet()) {
+      System.out.println(i);
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String firstName = "John ";
+    String lastName = "Doe";
+    System.out.println(firstName.concat(lastName));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x |= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet&lt;String> cars = new HashSet&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myNum = 15;
+    System.out.println(myNum);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x <= y); // returns false because 5 is neither less than or equal to 3
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(10 > 9); // returns true, because 10 is higher than 9  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.contains("Hel"));
+    System.out.println(myStr.contains("e"));
+    System.out.println(myStr.contains("Hi"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 10; i++) {
+      if (i == 4) {
+        break;
+      }
+      System.out.println(i);
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr1 = "Hello";
+    String myStr2 = "Hello";
+    System.out.println(myStr1.compareTo(myStr2)); // Returns 0 because they are equal
+  }
+}
+
+END_OF_CODE
+public class Main implements Runnable {
+  public static void main(String[] args) {
+    Main obj = new Main();
+    Thread thread = new Thread(obj);
+    thread.start();
+    System.out.println("This code is outside of the thread");
+  }
+  public void run() {
+    System.out.println("This code is running in a thread");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x > y); // returns true because 5 is greater than 3
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static int myMethod(int x, int y) {
+    return x + y;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(myMethod(5, 3));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj1 = new Main();
+    Main myObj2 = new Main();
+    System.out.println(myObj1.x);
+    System.out.println(myObj2.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x == y); // returns false because 5 is not equal to 3
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    System.out.println("The length of the txt string is: " + txt.length());
+  }
+}
+
+END_OF_CODE
+class OuterClass {
+  int x = 10; 
+
+  class InnerClass {
+    public int myInnerMethod() {
+      return x;
+    }
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.myInnerMethod());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    float f1 = 35e3f;
+    double d1 = 12E4d;
+    System.out.println(f1);
+    System.out.println(d1);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr1 = "Hello";
+    String myStr2 = "Hello";
+    String myStr3 = "Another String";
+    System.out.println(myStr1.equals(myStr2));
+    System.out.println(myStr1.equals(myStr3));
+  }
+}
+
+END_OF_CODE
+public class Main { 
+  public static void main(String[] args) { 
+    Integer myInt = 5; 
+    Double myDouble = 5.99; 
+    Character myChar = 'A'; 
+    System.out.println(myInt.intValue());
+    System.out.println(myDouble.doubleValue());
+    System.out.println(myChar.charValue());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x += 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+
+    // Code here cannot use x
+
+    int x = 100;
+
+    // Code here can use x
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;Integer> myNumbers = new ArrayList&lt;Integer>();
+    myNumbers.add(10);
+    myNumbers.add(15);
+    myNumbers.add(20);
+    myNumbers.add(25);
+    for (int i : myNumbers) {
+      System.out.println(i);
+    }
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    System.out.println(x == 10); // returns true, because the value of x is equal to 10
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int day = 4;
+    switch (day) {
+      case 1:
+        System.out.println("Monday");
+        break;
+      case 2:
+        System.out.println("Tuesday");
+        break;
+      case 3:
+        System.out.println("Wednesday");
+        break;
+      case 4:
+        System.out.println("Thursday");
+        break;
+      case 5:
+        System.out.println("Friday");
+        break;
+      case 6:
+        System.out.println("Saturday");
+        break;
+      case 7:
+        System.out.println("Sunday");
+        break;
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.abs(-4.7));  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myNum = 15;
+    System.out.println(myNum);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    int y = 9;
+    System.out.println(x > y); // returns true, because 10 is higher than 9  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    float myNum = 5.75f;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;Integer> myNumbers = new ArrayList&lt;Integer>();
+    myNumbers.add(33);
+    myNumbers.add(15);
+    myNumbers.add(20);
+    myNumbers.add(34);
+    myNumbers.add(8);
+    myNumbers.add(12);
+
+    Collections.sort(myNumbers);
+
+    for (int i : myNumbers) {
+      System.out.println(i);
+    }
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World"); // This is a comment
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 20;
+    int y = 18;
+    if (x > y) {
+      System.out.println("x is greater than y");
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+
+  // Create a checkAge() method with an integer parameter called age
+  static void checkAge(int age) {
+
+    // If age is less than 18, print "access denied"
+    if (age < 18) {
+      System.out.println("Access denied - You are not old enough!"); 
+      
+    // If age is greater than, or equal to, 18, print "access granted"
+    } else {
+      System.out.println("Access granted - You are old enough!"); 
+    }
+    
+  } 
+
+  public static void main(String[] args) { 
+    checkAge(20); // Call the checkAge method and pass along an age of 20
+  } 
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;Integer> myNumbers = new ArrayList&lt;Integer>();
+    myNumbers.add(33);
+    myNumbers.add(15);
+    myNumbers.add(20);
+    myNumbers.add(34);
+    myNumbers.add(8);
+    myNumbers.add(12);
+
+    Collections.sort(myNumbers);
+
+    for (int i : myNumbers) {
+      System.out.println(i);
+    }
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int day = 4;
+    switch (day) {
+      case 1:
+        System.out.println("Monday");
+        break;
+      case 2:
+        System.out.println("Tuesday");
+        break;
+      case 3:
+        System.out.println("Wednesday");
+        break;
+      case 4:
+        System.out.println("Thursday");
+        break;
+      case 5:
+        System.out.println("Friday");
+        break;
+      case 6:
+        System.out.println("Saturday");
+        break;
+      case 7:
+        System.out.println("Sunday");
+        break;
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr1 = "HELLO";
+    String myStr2 = "hello";
+    System.out.println(myStr1.compareToIgnoreCase(myStr2));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+
+    // Code here cannot use x
+
+    int x = 100;
+
+    // Code here can use x
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String name = "John";
+    System.out.println("Hello " + name);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj1 = new Main();
+    Main myObj2 = new Main();
+    myObj2.x = 25;
+    System.out.println(myObj1.x);
+    System.out.println(myObj2.x);
+  }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    
+    // Use removeLast() remove the last item from the list
+    cars.removeLast();
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x - y);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x ^= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    cars.remove(0);
+    System.out.println(cars);
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  int x = 10;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 25; // x is now 25
+    System.out.println(myObj.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x -= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
+}
+
+public class Main { 
+  public static void main(String[] args) {
+    Level myVar = Level.MEDIUM; 
+                
+    switch(myVar) {
+      case LOW:
+        System.out.println("Low level");
+        break;
+      case MEDIUM:
+        System.out.println("Medium level");
+        break;
+      case HIGH:
+        System.out.println("High level");
+        break;
+    }
+  }
+}
+
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i <= 10; i = i + 2) {
+      System.out.println(i);
+    }  
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet&lt;String> cars = new HashSet&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    System.out.println(cars.contains("Mazda"));
+  }
+}
+
+END_OF_CODE
+class OuterClass {
+  int x = 10;
+
+  static class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass.InnerClass myInner = new OuterClass.InnerClass();
+    System.out.println(myInner.y);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static int myMethod(int x, int y) {
+    return x + y;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(myMethod(5, 3));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    // Good
+    int minutesPerHour = 60;
+
+    // OK, but not so easy to understand what m actually is
+    int m = 60;
+    
+    System.out.println(minutesPerHour);
+    System.out.println(m);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello planet earth, you are a great planet.";
+    System.out.println(myStr.lastIndexOf("planet"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.max(5, 10));  
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(5);
+    numbers.add(9);
+    numbers.add(8);
+    numbers.add(1);
+    numbers.forEach( (n) -> { System.out.println(n); } );
+  }
+}
+
+END_OF_CODE
+public class Main {
+  String fname = "John";
+  String lname = "Doe";
+  int age = 24;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+    System.out.println("Age: " + myObj.age);
+  }
+}
+
+END_OF_CODE
+public class Main { 
+  public static void main(String[] args) { 
+    Integer myInt = 5; 
+    Double myDouble = 5.99; 
+    Character myChar = 'A'; 
+    System.out.println(myInt);
+    System.out.println(myDouble);
+    System.out.println(myChar);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod(String fname) {
+    System.out.println(fname + " Refsnes");
+  }
+
+  public static void main(String[] args) {
+    myMethod("Liam");
+    myMethod("Jenny");
+    myMethod("Anja");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {   
+    int time = 20;
+    String result;
+    result = (time < 18) ? "Good day." : "Good evening.";
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars.size());
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    x += 5;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World!");
+    System.out.println("I am learning Java.");
+    System.out.println("It is awesome!");
+  }
+}
+
+END_OF_CODE
+public class Main { 
+  enum Level {
+    LOW,
+    MEDIUM,
+    HIGH
+  }
+
+  public static void main(String[] args) { 
+    Level myVar = Level.MEDIUM; 
+    System.out.println(myVar); 
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World!");
+    System.out.println("I am learning Java.");
+    System.out.println("It is awesome!");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr1 = "Hello";
+    String myStr2 = "Hello";
+    System.out.println(myStr1.compareTo(myStr2)); // Returns 0 because they are equal
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    for (int i = 0; i < cars.size(); i++) {
+      System.out.println(cars.get(i));
+    }
+  } 
+}
+
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x <<= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main { 
+  public static void main(String[] args) { 
+    Integer myInt = 100; 
+    String myString = myInt.toString();
+    System.out.println(myString.length());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    int result = myStr.codePointCount(0, 5);
+    System.out.println(result);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x + y);
+  }
+}
+
+END_OF_CODE
+class MyClass {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Please locate where 'locate' occurs!";
+    System.out.println(txt.indexOf("locate"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt; // Automatic casting: int to double
+
+    System.out.println(myInt);
+    System.out.println(myDouble);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    for (String i : cars) {
+      System.out.println(i);
+    }
+  } 
+}
+
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myNum = 5;               // integer (whole number)
+    float myFloatNum = 5.99f;    // floating point number
+    char myLetter = 'D';         // character
+    boolean myBool = true;       // boolean
+    String myText = "Hello";     // String    
+    System.out.println(myNum);
+    System.out.println(myFloatNum);
+    System.out.println(myLetter);
+    System.out.println(myBool);
+    System.out.println(myText);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  // Static method
+  static void myStaticMethod() {
+    System.out.println("Static methods can be called without creating objects");
+  }
+
+  // Public method
+  public void myPublicMethod() {
+    System.out.println("Public methods must be called by creating objects");
+  }
+
+  // Main method
+  public static void main(String[] args) {
+    myStaticMethod(); // Call the static method
+
+    Main myObj = new Main(); // Create an object of MyClass
+    myObj.myPublicMethod(); // Call the public method
+  }
+}
+
+END_OF_CODE
+class Animal { // Superclass (parent)
+  public void animalSound() {
+    System.out.println("The animal makes a sound");
+  }
+}
+
+class Dog extends Animal { // Subclass (child)
+  public void animalSound() {
+    super.animalSound(); // Call the superclass method
+    System.out.println("The dog says: bow wow");
+  }
+}
+
+public class Main {
+   public static void main(String[] args) {
+      Animal myDog = new Dog(); // Create a Dog object
+      myDog.animalSound(); // Call the method on the Dog object
+   }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList&lt;Integer> numbers = new ArrayList&lt;Integer>();
+    numbers.add(12);
+    numbers.add(8);
+    numbers.add(2);
+    numbers.add(23);
+    Iterator&lt;Integer> it = numbers.iterator();
+    while(it.hasNext()) {
+      Integer i = it.next();
+      if(i < 10) {
+        it.remove();
+      }
+    }
+    System.out.println(numbers);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hello\tWorld!";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    long myNum = 15000000000L;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+final class Vehicle {
+  protected String brand = "Ford";
+  public void honk() {
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Main extends Vehicle {
+  private String modelName = "Mustang";
+  public static void main(String[] args) {
+    Main myFastCar = new Main();
+    myFastCar.honk();
+    System.out.println(myFastCar.brand + " " + myFastCar.modelName);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr1 = "Hello";
+    String myStr2 = "HELLO";
+    String myStr3 = "Another String";
+    System.out.println(myStr1.equalsIgnoreCase(myStr2));
+    System.out.println(myStr1.equalsIgnoreCase(myStr3));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 10; i++) {
+      if (i == 4) {
+        continue;
+      }
+      System.out.println(i);
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String firstName = "John ";
+    String lastName = "Doe";
+    System.out.println(firstName.concat(lastName));
+  }
+}
+
+END_OF_CODE
+public class Main { 
+  int x; 
+ 
+  // Constructor with a parameter
+  public Main(int x) { 
+    this.x = x; 
+  } 
+
+  // Call the constructor
+  public static void main(String[] args)  { 
+    Main myObj = new Main(5); 
+    System.out.println("Value of x = " + myObj.x);
+  } 
+} 
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World!");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int sum1 = 100 + 50;
+    int sum2 = sum1 + 250;
+    int sum3 = sum2 + sum2;
+    System.out.println(sum1);
+    System.out.println(sum2);
+    System.out.println(sum3);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    char myVar1 = 65, myVar2 = 66, myVar3 = 67;
+    System.out.println(myVar1);
+    System.out.println(myVar2);
+    System.out.println(myVar3);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String name = "John";
+    System.out.println(name);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "The character \\ is called backslash.";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    for (int i = 0; i < cars.length; i++) {
+      System.out.println(cars[i]);
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int i = 0;
+    while (i < 5) {
+      System.out.println(i);
+      i++;
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    try {
+      int[] myNumbers = {1, 2, 3};
+      System.out.println(myNumbers[10]);
+    } catch (Exception e) {
+      System.out.println("Something went wrong.");
+    } finally {
+      System.out.println("The 'try catch' is finished.");
+    }
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(5);
+    numbers.add(9);
+    numbers.add(8);
+    numbers.add(1);
+    numbers.forEach( (n) -> { System.out.println(n); } );
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String firstName = "John ";
+    String lastName = "Doe";
+    String fullName = firstName + lastName;
+    System.out.println(fullName);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int result = sum(5, 10);
+    System.out.println(result);
+  }
+  public static int sum(int start, int end) {
+    if (end > start) {
+      return end + sum(start, end - 1);
+    } else {
+      return end;
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.replace('l', 'p'));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.contentEquals("Hello"));
+    System.out.println(myStr.contentEquals("e"));
+    System.out.println(myStr.contentEquals("Hi"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.startsWith("Hel"));
+    System.out.println(myStr.startsWith("llo"));
+    System.out.println(myStr.startsWith("o"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i <= 10; i = i + 2) {
+      System.out.println(i);
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x != y); // returns true because 5 is not equal to 3
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.abs(-4.7));  
+    System.out.println(Math.abs(4.7));  
+    System.out.println(Math.abs(3));  
+  }
+}
+
+END_OF_CODE
+class Person {
+  String fname = "John";
+  String lname = "Doe";
+  String email = "john@doe.com";
+  int age = 24;
+  
+  public static void main(String[] args) {
+    Person myObj = new Person();
+    System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+    System.out.println("Email: " + myObj.email);
+    System.out.println("Age: " + myObj.age);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+  public static void main(String[] args) {
+  
+    // Make a collection
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+  
+    // Get the iterator
+    Iterator&lt;String> it = cars.iterator();
+    
+    // Loop through a collection
+    while(it.hasNext()) {
+      System.out.println(it.next());
+    }
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    System.out.println(capitalCities.get("England"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int[] myNumbers = {1, 2, 3};
+    System.out.println(myNumbers[10]);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int result = sum(5, 10);
+    System.out.println(result);
+  }
+  public static int sum(int start, int end) {
+    if (end > start) {
+      return end + sum(start, end - 1);
+    } else {
+      return end;
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String x = "10";
+    int y = 20;
+    String z = x + y;
+    System.out.println(z);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  // Static method
+  static void myStaticMethod() {
+    System.out.println("Static methods can be called without creating objects");
+  }
+
+  // Public method
+  public void myPublicMethod() {
+    System.out.println("Public methods must be called by creating objects");
+  }
+
+  // Main method
+  public static void main(String[] args) {
+    myStaticMethod(); // Call the static method
+
+    Main myObj = new Main(); // Create an object of MyClass
+    myObj.myPublicMethod(); // Call the public method
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int i = 0;
+    while (i < 10) {
+      System.out.println(i);
+      i++;
+      if (i == 4) {
+        break;
+      }
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    cars[0] = "Opel";
+    System.out.println(cars[0]);
+  }
+}
+
+END_OF_CODE
+interface FirstInterface {
+  public void myMethod(); // interface method
+}
+
+interface SecondInterface {
+  public void myOtherMethod(); // interface method
+}
+
+// DemoClass "implements" FirstInterface and SecondInterface
+class DemoClass implements FirstInterface, SecondInterface {
+  public void myMethod() {
+    System.out.println("Some text..");
+  }
+  public void myOtherMethod() {
+    System.out.println("Some other text...");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    DemoClass myObj = new DemoClass();
+    myObj.myMethod();
+    myObj.myOtherMethod();
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    capitalCities.clear();
+    System.out.println(capitalCities); 
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod(String fname, int age) {
+    System.out.println(fname + " is " + age);
+  }
+
+  public static void main(String[] args) {
+    myMethod("Liam", 5);
+    myMethod("Jenny", 8);
+    myMethod("Anja", 31);
+  }
+}
+
+END_OF_CODE
+class OuterClass {
+  int x = 10;
+
+  private class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.y + myOuter.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    System.out.println(x == 10); // returns true, because the value of x is equal to 10
+  }
+}
+
+END_OF_CODE
+public class Main {
+  final int x = 10;
+  final double PI = 3.14;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 50; // will generate an error
+    myObj.PI = 25; // will generate an error
+    System.out.println(myObj.x); 
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int i = 0;
+    do {
+      System.out.println(i);
+      i++;
+    }
+    while (i < 5);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.endsWith("Hel"));
+    System.out.println(myStr.endsWith("llo"));
+    System.out.println(myStr.endsWith("o"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x, y, z;
+    x = y = z = 50;
+    System.out.println(x + y + z);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    cars.clear();
+    System.out.println(cars);
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int myNum = 15;
+    myNum = 20;  // myNum is now 20
+    System.out.println(myNum);
+  }
+}
+
+END_OF_CODE
+class Animal {
+  public void animalSound() {
+    System.out.println("The animal makes a sound");
+  }
+}
+
+class Pig extends Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Dog extends Animal {
+  public void animalSound() {
+    System.out.println("The dog says: bow wow");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Animal myAnimal = new Animal();
+    Animal myPig = new Pig();
+    Animal myDog = new Dog();
+        
+    myAnimal.animalSound();
+    myPig.animalSound();
+    myDog.animalSound();
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x - y);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars.size());
+  } 
+}
+
+END_OF_CODE
+import java.time.LocalDate;  // import the LocalDate class
+
+public class Main {  
+  public static void main(String[] args) {  
+    LocalDate myObj = LocalDate.now();  // Create a date object
+    System.out.println(myObj);  // Display the current date
+  }  
+}  
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    
+    // Use getLast() to display the last item in the list
+    System.out.println(cars.getLast());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(15 == 10); // returns false, because 10 is not equal to 15
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 100 + 50;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    /* The code below will print the words Hello World
+    to the screen, and it is amazing */
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String greeting = "Hello World";
+    System.out.println(greeting);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World"); // This is a comment
+  }
+}
+
+END_OF_CODE
+// Abstract class
+abstract class Animal {
+  // Abstract method (does not have a body)
+  public abstract void animalSound();
+  // Regular method
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+// Subclass (inherit from Animal)
+class Pig extends Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig(); // Create a Pig object
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+
+END_OF_CODE
+import java.time.LocalDateTime;  // Import the LocalDateTime class
+import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter class
+
+public class Main {
+  public static void main(String[] args) {  
+    LocalDateTime myDateObj = LocalDateTime.now();  
+    System.out.println("Before formatting: " + myDateObj);  
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");  
+    
+    String formattedDate = myDateObj.format(myFormatObj);  
+    System.out.println("After formatting: " + formattedDate);  
+  }  
+}  
+
+END_OF_CODE
+public class Main {
+  static int myMethod(int x, int y) {
+    return x + y;
+  }
+
+  public static void main(String[] args) {
+    int z = myMethod(5, 3);
+    System.out.println(z);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    char myGrade = 'B';
+    System.out.println(myGrade);
+  }
+}
+
+END_OF_CODE
+public class Main {
+
+  // Create a checkAge() method with an integer parameter called age
+  static void checkAge(int age) {
+
+    // If age is less than 18, print "access denied"
+    if (age < 18) {
+      System.out.println("Access denied - You are not old enough!"); 
+      
+    // If age is greater than, or equal to, 18, print "access granted"
+    } else {
+      System.out.println("Access granted - You are old enough!"); 
+    }
+    
+  } 
+
+  public static void main(String[] args) { 
+    checkAge(20); // Call the checkAge method and pass along an age of 20
+  } 
+}
+
+END_OF_CODE
+class MyClass {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String firstName = "John ";
+    String lastName = "Doe";
+    String fullName = firstName + lastName;
+    System.out.println(fullName);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod(String fname) {
+    System.out.println(fname + " Refsnes");
+  }
+
+  public static void main(String[] args) {
+    myMethod("Liam");
+    myMethod("Jenny");
+    myMethod("Anja");
+  }
+}
+
+END_OF_CODE
+class Animal {
+  public void animalSound() {
+    System.out.println("The animal makes a sound");
+  }
+}
+
+class Pig extends Animal {
+  public void animalSound() {
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Dog extends Animal {
+  public void animalSound() {
+    System.out.println("The dog says: bow wow");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Animal myAnimal = new Animal();
+    Animal myPig = new Pig();
+    Animal myDog = new Dog();
+        
+    myAnimal.animalSound();
+    myPig.animalSound();
+    myDog.animalSound();
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    try {
+      int[] myNumbers = {1, 2, 3};
+      System.out.println(myNumbers[10]);
+    } catch (Exception e) {
+      System.out.println("Something went wrong.");
+    } finally {
+      System.out.println("The 'try catch' is finished.");
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 5; i++) {
+      System.out.println(i);
+    }  
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    
+    for (String i : capitalCities.keySet()) {
+      System.out.println("key: " + i + " value: " + capitalCities.get(i));
+    }
+  }
+}
+
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x >>= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "Hello\tWorld!";
+    System.out.println(txt);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+  public static void main(String[] args) {
+  
+    // Make a collection
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+  
+    // Get the iterator
+    Iterator&lt;String> it = cars.iterator();
+  
+    // Print the first item
+    System.out.println(it.next());
+  }
+}
+
+END_OF_CODE
+import java.time.LocalTime;  // import the LocalTime class
+
+public class Main {  
+  public static void main(String[] args) {  
+    LocalTime myObj = LocalTime.now();
+    System.out.println(myObj);
+  }  
+}  
+
+END_OF_CODE
+class OuterClass {
+  int x = 10;
+
+  class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.y + myOuter.x);
+  }
+}
+
+END_OF_CODE
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
+}
+
+public class Main { 
+  public static void main(String[] args) { 
+    Level myVar = Level.MEDIUM; 
+    System.out.println(myVar); 
+  } 
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    
+    for (String i : capitalCities.keySet()) {
+      System.out.println(i);
+    }
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    int y = 20;
+    int z = x + y;
+    System.out.println(z);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String name = "John";
+    System.out.println(name);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    System.out.println(cars.length);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World!");
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+
+    // Create a HashSet object called numbers
+    HashSet&lt;Integer> numbers = new HashSet&lt;Integer>();
+
+    // Add values to the set
+    numbers.add(4);
+    numbers.add(7);
+    numbers.add(8);
+
+    // Show which numbers between 1 and 10 are in the set
+    for(int i = 1; i <= 10; i++) {
+      if(numbers.contains(i)) {
+        System.out.println(i + " was found in the set.");
+      } else {
+        System.out.println(i + " was not found in the set.");
+      }
+    }
+  }
+}
+
+END_OF_CODE
+//filename: Main.java
+public class Main {
+  int modelYear;
+  String modelName;
+
+  public Main(int year, String name) {
+    modelYear = year;
+    modelName = name;
+  }
+
+  public static void main(String[] args) {
+    Main myCar = new Main(1969, "Mustang");
+    System.out.println(myCar.modelYear + " " + myCar.modelName);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int i = 0;
+    do {
+      System.out.println(i);
+      i++;
+    }
+    while (i < 5);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x > y); // returns true because 5 is greater than 3
+  }
+}
+
+END_OF_CODE
+import java.time.LocalDateTime;  // Import the LocalDateTime class
+import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter class
+
+public class Main {
+  public static void main(String[] args) {  
+    LocalDateTime myDateObj = LocalDateTime.now();  
+    System.out.println("Before Formatting: " + myDateObj);  
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss");  
+    
+    String formattedDate = myDateObj.format(myFormatObj);  
+    System.out.println("After Formatting: " + formattedDate);  
+  }  
+}  
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt1 = "It's alright";
+    String txt2 = "That's great";
+    System.out.println(txt1);
+    System.out.println(txt2);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+import java.util.function.Consumer;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(5);
+    numbers.add(9);
+    numbers.add(8);
+    numbers.add(1);
+    Consumer<Integer> method = (n) -> { System.out.println(n); };
+    numbers.forEach( method );
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    double myNum = 19.99d;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello planet earth, you are a great planet.";
+    System.out.println(myStr.indexOf("e", 5));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    System.out.println(myStr.endsWith("Hel"));
+    System.out.println(myStr.endsWith("llo"));
+    System.out.println(myStr.endsWith("o"));
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+    int x = myNumbers[1][2];
+    System.out.println(x);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int time = 20;
+    if (time < 18) {
+      System.out.println("Good day.");
+    } else {
+      System.out.println("Good evening.");
+    }  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    System.out.println(!(x > 3 && x < 10)); // returns false because ! (not) is used to reverse the result
+  }
+}
+
+END_OF_CODE
+// Abstract class
+abstract class Animal {
+  // Abstract method (does not have a body)
+  public abstract void animalSound();
+  // Regular method
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+// Subclass (inherit from Animal)
+class Pig extends Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig(); // Create a Pig object
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x + y);
+  }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    
+    // Use addLast() to add the item to the end
+    cars.addLast("Mazda");
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr1 = "Hello";
+    String myStr2 = "";
+    System.out.println(myStr1.isEmpty());
+    System.out.println(myStr2.isEmpty());
+  }
+}
+
+END_OF_CODE
+public class Main {  
+  public static void main(String[] args) {  
+    Main myObj = new Main();  
+    System.out.println(myObj instanceof Main); 
+  }  
+} 
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    System.out.println(txt.length());
+  }
+}
+
+END_OF_CODE
+//filename: Main.java
+public class Main {
+  int modelYear;
+  String modelName;
+
+  public Main(int year, String name) {
+    modelYear = year;
+    modelName = name;
+  }
+
+  public static void main(String[] args) {
+    Main myCar = new Main(1969, "Mustang");
+    System.out.println(myCar.modelYear + " " + myCar.modelName);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int i = 0;
+    while (i < 10) {
+      if (i == 4) {
+        i++;
+        continue;
+      }
+      System.out.println(i);
+      i++;
+    }  
+  }
+}
+
+END_OF_CODE
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Main {
+  public static void main(String[] args) {
+    Pattern pattern = Pattern.compile("w3schools", Pattern.CASE_INSENSITIVE);
+    Matcher matcher = pattern.matcher("Visit W3Schools!");
+    boolean matchFound = matcher.find();
+    if(matchFound) {
+      System.out.println("Match found");
+    } else {
+      System.out.println("Match not found");
+    }
+  }
+}
+
+END_OF_CODE
+// Create a Main class
+public class Main {
+ 
+  // Create a fullThrottle() method
+  public void fullThrottle() {
+    System.out.println("The car is going as fast as it can!");
+  }
+
+  // Create a speed() method and add a parameter
+  public void speed(int maxSpeed) {
+    System.out.println("Max speed is: " + maxSpeed);
+  }
+
+  // Inside main, call the methods on the myCar object
+  public static void main(String[] args) {
+    Main myCar = new Main();     // Create a myCar object
+    myCar.fullThrottle();      // Call the fullThrottle() method
+    myCar.speed(200);          // Call the speed() method
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Math.abs(-4.7));  
+  }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    
+    // Use addFirst() to add the item to the beginning
+    cars.addFirst("Mazda");
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+import java.time.LocalDate;  // import the LocalDate class
+
+public class Main {  
+  public static void main(String[] args) {  
+    LocalDate myObj = LocalDate.now();  // Create a date object
+    System.out.println(myObj);  // Display the current date
+  }  
+}  
+
+END_OF_CODE
+public class Main { 
+  public static void main(String[] args) { 
+    Integer myInt = 5; 
+    Double myDouble = 5.99; 
+    Character myChar = 'A'; 
+    System.out.println(myInt);
+    System.out.println(myDouble);
+    System.out.println(myChar);
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars.get(0));
+  } 
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    
+    // Use getLast() to display the last item in the list
+    System.out.println(cars.getLast());
+  }
+}
+
+END_OF_CODE
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
+}
+
+public class Main { 
+  public static void main(String[] args) { 
+    Level myVar = Level.MEDIUM; 
+    System.out.println(myVar); 
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    double myDouble = 9.78d;
+    int myInt = (int) myDouble; // Explicit casting: double to int
+
+    System.out.println(myDouble);
+    System.out.println(myInt);
+  }
+}
+
+END_OF_CODE
+class Animal { // Superclass (parent)
+  public void animalSound() {
+    System.out.println("The animal makes a sound");
+  }
+}
+
+class Dog extends Animal { // Subclass (child)
+  public void animalSound() {
+    super.animalSound(); // Call the superclass method
+    System.out.println("The dog says: bow wow");
+  }
+}
+
+public class Main {
+   public static void main(String[] args) {
+      Animal myDog = new Dog(); // Create a Dog object
+      myDog.animalSound(); // Call the method on the Dog object
+   }
+}
+
+END_OF_CODE
+import java.util.LinkedList;
+
+public class Main {
+  public static void main(String[] args) {
+    LinkedList&lt;String> cars = new LinkedList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    
+    // Use getFirst() to display the first item in the list
+    System.out.println(cars.getFirst());
+  }
+}
+
+END_OF_CODE
+import java.time.LocalDateTime;  // Import the LocalDateTime class
+import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter class
+
+public class Main {
+  public static void main(String[] args) {  
+    LocalDateTime myDateObj = LocalDateTime.now();  
+    System.out.println("Before Formatting: " + myDateObj);  
+    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");  
+    
+    String formattedDate = myDateObj.format(myFormatObj);  
+    System.out.println("After Formatting: " + formattedDate);  
+  }  
+}  
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String myStr1 = "Hello";
+    String myStr2 = "HELLO";
+    String myStr3 = "Another String";
+    System.out.println(myStr1.equalsIgnoreCase(myStr2));
+    System.out.println(myStr1.equalsIgnoreCase(myStr3));
+  }
+}
+
+END_OF_CODE
+class OuterClass {
+  int x = 10; 
+
+  class InnerClass {
+    public int myInnerMethod() {
+      return x;
+    }
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.myInnerMethod());
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void checkAge(int age) { 
+    if (age < 18) {
+      throw new ArithmeticException("Access denied - You must be at least 18 years old."); 
+    } else {
+      System.out.println("Access granted - You are old enough!"); 
+    }
+ } 
+ 
+ public static void main(String[] args) { 
+   checkAge(20); 
+ } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    char[] myStr1 = {'H', 'e', 'l', 'l', 'o'};
+    String myStr2 = "";
+    myStr2 = myStr2.copyValueOf(myStr1, 0, 5);
+    System.out.println("Returned String: " + myStr2);  
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    short myNum = 5000;
+    System.out.println(myNum);  
+  }
+}
+
+END_OF_CODE
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap&lt;String, String> capitalCities = new HashMap&lt;String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    
+    for (String i : capitalCities.values()) {
+      System.out.println(i);
+    }
+  }
+}
+
+END_OF_CODE
+public class Main implements Runnable {
+  public static void main(String[] args) {
+    Main obj = new Main();
+    Thread thread = new Thread(obj);
+    thread.start();
+    System.out.println("This code is outside of the thread");
+  }
+  public void run() {
+    System.out.println("This code is running in a thread");
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    cars.set(0, "Opel");
+    System.out.println(cars);
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod() {
+    System.out.println("Hello World!");
+  }
+
+  public static void main(String[] args) {
+    myMethod();
+  }
+}
+
+END_OF_CODE
+import java.util.ArrayList;
+
+public class Main { 
+  public static void main(String[] args) { 
+    ArrayList&lt;String> cars = new ArrayList&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    cars.set(0, "Opel");
+    System.out.println(cars);
+  } 
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    x >>= 3;
+    System.out.println(x);
+  }
+}
+
+END_OF_CODE
+// Import the HashSet class
+import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet&lt;String> cars = new HashSet&lt;String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    cars.remove("Volvo");
+    System.out.println(cars);
+  }
+}
+
+END_OF_CODE
+class OuterClass {
+  int x = 10;
+
+  class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.y + myOuter.x);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    int x = 5;
+    int y = 3;
+    System.out.println(x * y);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    System.out.println(cars.length);
+  }
+}
+
+END_OF_CODE
+public class Main {
+  static void myMethod() {
+    System.out.println("I just got executed!");
+  }
+
+  public static void main(String[] args) {
+    myMethod();
+  }
+}
+
+END_OF_CODE

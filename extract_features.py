@@ -3,6 +3,8 @@ from os import listdir
 from os.path import isfile, join, isdir
 import random
 
+import matplotlib.pyplot as plt
+
 cleanedFolder = './cleanedDataset/'
 
 # read all files inside cleanedDataset
@@ -11,6 +13,7 @@ print(files)
 
 datasetLines = []
 
+character_frequency_average = {}
 # read each file
 for file in files:
     try:
@@ -25,9 +28,7 @@ for file in files:
     contents = contents.replace('\n', '').replace(' ', '')
 
     samples = contents.split('END_OF_CODE')
-
-    # remove empty strings
-    samples = list(filter(None, samples))    
+    samples = list(filter(None, samples)) # remove empty strings
 
     character_map = []
     character_frequency = []
@@ -46,11 +47,15 @@ for file in files:
             else:
                 character_frequency[character_map.index(character)] += 1
 
-        total_characters = len(sample)
-        # relative frequency is in percentages
-        character_frequency = ','.join(str(round(f / total_characters * 100)) for f in character_frequency)
+        
+        # calculate relative frequency
+        character_frequency = [round(f / len(sample) * 100) for f in character_frequency]
+        datasetLines.append(label + ":" + ','.join(str(f) for f in character_frequency))
 
-        datasetLines.append(label + ":" + character_frequency)
+        # calculate average for each language
+        if label not in character_frequency_average:
+            character_frequency_average[label] = [0] * 1000
+        character_frequency_average[label] = [character_frequency_average[label][i] + (character_frequency[i] / len(samples)) for i in range(len(character_frequency))]
 
     print('Finished extracting features from ' + str(len(samples)) + ' code samples to ' + file)
 
@@ -60,3 +65,11 @@ random.shuffle(datasetLines)
 f = open('./languageFeatures.txt', 'w')
 f.write('\n'.join(str(line) for line in datasetLines))
 f.close()
+
+for language in character_frequency_average:
+    plt.plot(character_map, character_frequency_average[language][:len(character_map)], label=language)
+
+plt.xlabel('Character')
+plt.ylabel('Relative Frequency (%)')
+plt.legend()
+plt.show()
