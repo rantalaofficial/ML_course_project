@@ -1,5 +1,5 @@
 # ML_course_project
-My machine learning course project that can predict which programming language is used. 
+My machine learning course project that can predict which programming language is used by utilizing SVC and Random Forest algorithms. Made using sklearn library. 
 
 Results from the paper:
 
